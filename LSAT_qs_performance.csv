@@ -1,0 +1,31 @@
+,model,q_num,q_type,answer,correct
+0,tf_distil_bert_for_question_answering,111,LR,[CLS],0
+1,tf_distil_bert_for_question_answering,95,LR,,0
+2,tf_distil_bert_for_question_answering,109,LR,popular belief rather than on scientific opinion,0
+3,tf_distil_bert_for_question_answering,128,LR,,0
+4,tf_distil_bert_for_question_answering,100,LR,[CLS],0
+5,tf_distil_bert_for_question_answering,99,LR,[CLS],0
+6,tf_distil_bert_for_question_answering,97,LR,"There is no way to know what made Shakespeare different from his contemporaries. B. The life of the average man in Elizabethan England is uninteresting., C. Shakespeare was very different from the other men of his time., D. A biography should always focus on what makes its subject distinctive., E. What is most interesting about Shakespeare is what made him different from his contemporaries. The conclusion of the argument can be properly drawn if which one of the following is assumed? [SEP] Critic : The recent biography of Shakespeare does not explain what is of most interest about him. It is by an expert on the history of Elizabethan England, and so does a good job of showing what life would have been like for Shakespeare as a man of that time. But it does not explain what made Shakespeare different from his contemporaries",0
+7,tf_distil_bert_for_question_answering,106,LR,"Evidently, watching too much television",0
+8,tf_distil_bert_for_question_answering,92,LR,,0
+9,tf_distil_bert_for_question_answering,129,LR,[CLS] Here are the options : A. A company whose former manager is now an official with the Department of Natural Resources was one of several bidders for an extremely lucrative contract with the department ; the names of the bidders were not disclosed to the public,0
+10,tf_distil_bert_for_question_answering,46,LR,[CLS],0
+11,tf_distil_bert_for_question_answering,26,LR,an advertisement's only purpose is to convey its message,0
+12,tf_distil_bert_for_question_answering,35,LR,reasonable accuracy,0
+13,tf_distil_bert_for_question_answering,94,LR,Margaret : A primary goal of any university is to serve the needs of the community where it is located,0
+14,tf_distil_bert_for_question_answering,120,LR,,0
+15,tf_distil_bert_for_question_answering,72,LP,consecutive time slots,0
+16,tf_distil_bert_for_question_answering,56,LP,No child owns more than one of any particular breed of dog,0
+17,tf_distil_bert_for_question_answering,70,LP,,0
+18,tf_distil_bert_for_question_answering,89,LP,,0
+19,tf_distil_bert_for_question_answering,61,LP,[CLS],0
+20,tf_distil_bert_for_question_answering,60,LP,[CLS],0
+21,tf_distil_bert_for_question_answering,58,LP,[CLS],0
+22,tf_distil_bert_for_question_answering,67,LP,[CLS],0
+23,tf_distil_bert_for_question_answering,53,LP,,0
+24,tf_distil_bert_for_question_answering,90,LP,one at a time and in order,0
+25,tf_distil_bert_for_question_answering,23,LP,"on rails and is in Howard Auditorium., D. The second lecture is on terns",0
+26,tf_distil_bert_for_question_answering,3,LP,[CLS],0
+27,tf_distil_bert_for_question_answering,12,LP,If Myers is on the team,0
+28,tf_distil_bert_for_question_answering,55,LP,complete and accurate,0
+29,tf_distil_bert_for_question_answering,81,LP,[CLS],0

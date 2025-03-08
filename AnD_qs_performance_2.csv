@@ -1,0 +1,31 @@
+,model,q_num,q_type,answer,correct
+0,tf_distil_bert_for_question_answering,AR,Helmet is to head as Shoe is to _____.,"A. knee B. foot, C. sock, D. hat, E. toe",0
+1,tf_distil_bert_for_question_answering,AR,Cow is to human as Fly is to ______.,"A. frog B. hop, C. buzz, D. fly, E. cow the word that best replaces the "" _ _ _ _ _",0
+2,tf_distil_bert_for_question_answering,AR,Ruby is to corundum as Diamond is to ______.,"A. silver B. gold, C. iron, D. cobalt, E. carbon the word that best replaces the "" _ _ _ _ _",0
+3,tf_distil_bert_for_question_answering,AR,Aphrodite is to Venus as Roman is to ______.,"A. Persian B. Greek, C. Egyptian, D. Mediterranean, E. Indian",0
+4,tf_distil_bert_for_question_answering,AR,4 is to 16 as 8 is to ______.,"A. 24 B. 36, C. 48, D. 56, E. 64",0
+5,tf_distil_bert_for_question_answering,AR,Fork is to spaghetti as spoon is to ______.,"A. human B. bowl, C. eat, D. wheat, E. cereal",0
+6,tf_distil_bert_for_question_answering,AR,Buying food at the grocery store is like ____.,"Going on a walk, C. Spending time with friends, D. Going to the movies, E. Buying something online",0
+7,tf_distil_bert_for_question_answering,AR,Finding hidden treasure is like ______.,,0
+8,tf_distil_bert_for_question_answering,AR,Starting a new book is like ______.,Starting physical therapy,0
+9,tf_distil_bert_for_question_answering,AR,Laugh is to cry as ______.,"the word that best replaces the "" _ _ _ _ _ """,0
+10,tf_distil_bert_for_question_answering,AR,Drive is to car as ______.,"the word that best replaces the "" _ _ _ _ _ """,0
+11,tf_distil_bert_for_question_answering,AR,Writing relates to ink as _____.,"the word that best replaces the "" _ _ _ _ _ """,0
+12,tf_distil_bert_for_question_answering,AR,A lake is most similar to a _______.,,0
+13,tf_distil_bert_for_question_answering,AR,A bandaid is most similar to ______.,,0
+14,tf_distil_bert_for_question_answering,AR,A sandwich is most similar to _____.,"A. an oreo B. a book, C. a computer, D. a potato, E. a crab the word that best replaces the "" _ _ _ _ _ """,0
+15,tf_distil_bert_for_question_answering,DR,"All mountains are large. Everest is a mountain, so Everest is _______.","A. a mountain B. cold, C. all mountains",0
+16,tf_distil_bert_for_question_answering,DR,"All dogs are nice. Steve is a dog, so steve is _______.","C. barks, D. a pet",0
+17,tf_distil_bert_for_question_answering,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______.","A. a puppet B. a human, C. scary, D. small, E. a ventriloquist",0
+18,tf_distil_bert_for_question_answering,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______.","A. dumb B. large, C. strong, D. ugly, E. hairy the word that best replaces the "" _ _ _ _ _",0
+19,tf_distil_bert_for_question_answering,DR,"Siblings always fight. Me and Jose are siblings, so _______.","the word that best replaces the "" _ _ _ _ _ """,0
+20,tf_distil_bert_for_question_answering,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______.","the word that best replaces the "" _ _ _ _ _ """,0
+21,tf_distil_bert_for_question_answering,DR,"Cats like going outside, so ______.","the word that best replaces the "" _ _ _ _ _ """,0
+22,tf_distil_bert_for_question_answering,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______.","A. a bad person B. a politician, C. a senator, D. a hater, E. a woman the word that best replaces the "" _ _ _ _ _",0
+23,tf_distil_bert_for_question_answering,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. ",A. be a dog B. not be a dog,0
+24,tf_distil_bert_for_question_answering,DR,"The sky is not green. The ozone layer is green, so it _______.","the word that best replaces the "" _ _ _ _ _ """,0
+25,tf_distil_bert_for_question_answering,DR,"My plant is huge. This fern is tiny, so _______.","the word that best replaces the "" _ _ _ _ _ """,0
+26,tf_distil_bert_for_question_answering,DR,"I have three dogs. Dogs and cats can't live together, so ______.","the word that best replaces the "" _ _ _ _ _ """,0
+27,tf_distil_bert_for_question_answering,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______.",,0
+28,tf_distil_bert_for_question_answering,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.","the word that best replaces the "" _ _ _ _ _ """,0
+29,tf_distil_bert_for_question_answering,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.","the word that best replaces the "" _ _ _ _ _ """,0
