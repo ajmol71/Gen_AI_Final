@@ -1,0 +1,31 @@
+q_num,q_type,prompt,question,choice_a,choice_b,choice_c,choice_d,choice_e,correct_a
+1,AR,Helmet is to head as Shoe is to _____.,The word that fills in the blank is ,knee,foot,sock,hat,toe,choice_b
+2,AR,Cow is to human as Fly is to ______.,The word that fills in the blank is ,frog,hop,buzz,fly,cow,choice_a
+3,AR,Ruby is to corundum as Diamond is to ______.,The word that fills in the blank is ,silver,gold,iron,cobalt,carbon,choice_e
+4,AR,Aphrodite is to Venus as Roman is to ______.,The word that fills in the blank is ,Persian,Greek,Egyptian,Mediterranean,Indian,choice_b
+5,AR,4 is to 16 as 8 is to ______.,The word that fills in the blank is ,24,36,48,56,64,choice_e
+6,AR,Fork is to spaghetti as spoon is to ______.,The word that fills in the blank is ,human,bowl,eat,wheat,cereal,choice_e
+7,AR,Buying food at the grocery store is like ____.,The word that fills in the blank is ,Getting gas at a gas station,Going on a walk,Spending time with friends,Going to the movies,Buying something online,choice_a
+8,AR,Finding hidden treasure is like ______.,The word that fills in the blank is ,Opening a box,Getting a present,Having a party,Winning the lottery,Going on a scavenger hunt,choice_d
+9,AR,Starting a new book is like ______.,The word that fills in the blank is ,Beginning a show,Reading a book,Starting a road trip,Starting a TV series,Starting physical therapy,choice_d
+10,AR,Laugh is to cry as ______.,The word that fills in the blank is ,Happy is to sad.,Cry is to laugh.,Happy is to smile.,Sad is to smile.,Sad is to cry.,choice_a
+11,AR,Drive is to car as ______.,The word that fills in the blank is ,Hover is to board.,Play is to game.,Grow is to nurture.,Engine is to bike.,Engine is to truck.,choice_b
+12,AR,Writing relates to ink as _____.,The word that fills in the blank is ,Painting relates to paint.,Car relates to oil.,Book relates to pen.,Person relates to eat.,Friend relates to marriage.,choice_a
+13,AR,A lake is most similar to a _______.,The word that fills in the blank is ,crater,glass of water,empty cup,tall building,pie,choice_b
+14,AR,A bandaid is most similar to ______.,The word that fills in the blank is ,a cut,a doctor,a medicine,a piece of paper,a tarp,choice_e
+15,AR,A sandwich is most similar to _____.,The word that fills in the blank is ,an oreo,a book,a computer ,a potato,a crab,choice_a
+16,DR,"All mountains are large. Everest is a mountain, so Everest is _______.",The word that fills in the blank is ,a mountain,cold,all mountains,large,small,choice_d
+17,DR,"All dogs are nice. Steve is a dog, so steve is _______.",The word that fills in the blank is ,a dog,mean,barks,a pet,nice,choice_e
+18,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______.",The word that fills in the blank is ,a puppet,a human,scary,small,a ventriloquist,choice_c
+19,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______.",The word that fills in the blank is ,dumb,large,strong,ugly,hairy,choice_a
+20,DR,"Siblings always fight. Me and Jose are siblings, so _______.",The word that fills in the blank is ,we always have each other's backs.,we always fight.,we never fight.,we have the same parents.,we have the same last name.,choice_b
+21,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______.",The word that fills in the blank is ,Jessamine must like purple.,she must be a girl.,she has good taste.,Jessamine is royalty.,Jessamine owns purple clothes.,choice_d
+22,DR,"Cats like going outside, so ______.",The word that fills in the blank is ,my cat Peter likes to go outside.,my cat Peter must be outside.,"Peter, my cat, is old.",my cat Peter has claws.,my cat Peter eats grass.,choice_a
+23,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______.",The word that fills in the blank is ,a bad person,a politician,a senator,a hater,a woman,choice_c
+24,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. ",The word that fills in the blank is ,be a dog,not be a dog,be ugly,not be ugly,be cute,choice_b
+25,DR,"The sky is not green. The ozone layer is green, so it _______.",The word that fills in the blank is ,is dangerous.,is due to climate change.,is not the sky.,is not visible.,is polluted.,choice_c
+26,DR,"My plant is huge. This fern is tiny, so _______.",The word that fills in the blank is ,the fern is not my plant.,the fern is not huge.,my plant is small.,my plant is not a sunflower.,my plant is a sunflower.,choice_a
+27,DR,"I have three dogs. Dogs and cats can't live together, so ______.",The word that fills in the blank is ,My dogs don't like cats.,I have three cats.,I want a cat.,My dogs are lonely.,I have no cats.,choice_e
+28,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______.",The word that fills in the blank is ,from New Zealand.,from the United States.,Mark.,not Mark.,okay with traveling.,choice_d
+29,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.",The word that fills in the blank is ,I am sad.,I am camping.,I am in Colorado.,I am in the woods.,I am happy.,choice_a
+30,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.",The word that fills in the blank is ,I had coffee.,I had money.,I woke up at 7:00am.,I went to work.,I was poor.,choice_b
