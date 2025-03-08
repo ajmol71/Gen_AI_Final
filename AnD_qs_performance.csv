@@ -1,0 +1,31 @@
+,model,q_num,q_type,answer,correct
+0,tf_distil_bert_for_question_answering,1,AR,Shoe is to _ _ _ _ _,0
+1,tf_distil_bert_for_question_answering,2,AR,Fly is to _ _ _ _ _ _,0
+2,tf_distil_bert_for_question_answering,3,AR,corundum,0
+3,tf_distil_bert_for_question_answering,4,AR,Aphrodite is to Venus,0
+4,tf_distil_bert_for_question_answering,5,AR,8 is to _ _ _ _ _ _,0
+5,tf_distil_bert_for_question_answering,6,AR,spaghetti,0
+6,tf_distil_bert_for_question_answering,7,AR,Buying food,0
+7,tf_distil_bert_for_question_answering,8,AR,Finding hidden treasure,0
+8,tf_distil_bert_for_question_answering,9,AR,The word that fills in the blank,0
+9,tf_distil_bert_for_question_answering,10,AR,The word that fills in the blank is [SEP] Laugh is to cry as _ _ _ _ _ _,0
+10,tf_distil_bert_for_question_answering,11,AR,car as _ _ _ _ _ _,0
+11,tf_distil_bert_for_question_answering,12,AR,ink as _ _ _ _ _,0
+12,tf_distil_bert_for_question_answering,13,AR,A lake,0
+13,tf_distil_bert_for_question_answering,14,AR,bandaid,0
+14,tf_distil_bert_for_question_answering,15,AR,A sandwich,0
+15,tf_distil_bert_for_question_answering,16,DR,All mountains are large,0
+16,tf_distil_bert_for_question_answering,17,DR,,0
+17,tf_distil_bert_for_question_answering,18,DR,Puppets,0
+18,tf_distil_bert_for_question_answering,19,DR,All men are dumb,0
+19,tf_distil_bert_for_question_answering,20,DR,Siblings always fight.,0
+20,tf_distil_bert_for_question_answering,21,DR,Purple is only for royalty,0
+21,tf_distil_bert_for_question_answering,22,DR,Cats like going outside,0
+22,tf_distil_bert_for_question_answering,23,DR,The word that fills in the blank,0
+23,tf_distil_bert_for_question_answering,24,DR,,0
+24,tf_distil_bert_for_question_answering,25,DR,The ozone layer,0
+25,tf_distil_bert_for_question_answering,26,DR,This fern is tiny,0
+26,tf_distil_bert_for_question_answering,27,DR,The word that fills in the blank,0
+27,tf_distil_bert_for_question_answering,28,DR,The word that fills in the blank,0
+28,tf_distil_bert_for_question_answering,29,DR,The word that fills in the blank is [SEP] I only go to cabins when I am sad,0
+29,tf_distil_bert_for_question_answering,30,DR,coffee,0
