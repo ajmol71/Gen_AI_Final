@@ -1,4 +1,4 @@
-q_num,q_type,prompt,question,choice_a,choice_b,choice_c,choice_d,choice_e,correct_a
+q_num,q_type,prompt,question,choice_a,choice_b,choice_c,choice_d,choice_e,label
 1,LP,"A concert promoter is filling the six slots at a benefit concert. The slots, from earliest to latest, are numbered slot one through slot six. The slots will be filled by six bands -- Uneasy, Vegemite, Wellspring, Xpert, Yardsign, and Zircon. Each band will perform in just one slot. The order must meet the following constraints: Vegemite performs in an earlier slot than Zircon. Wellspring and Zircon each perform in an earlier slot than Xpert. Uneasy performs in one of the last three slots. Yardsign performs in one of the first three slots.",Which one of the following CANNOT be the band that performs in slot five?,Uneasy,Vegemite,Welspring,Xpert,Zircon,choice_b
 2,LP,"A concert promoter is filling the six slots at a benefit concert. The slots, from earliest to latest, are numbered slot one through slot six. The slots will be filled by six bands -- Uneasy, Vegemite, Wellspring, Xpert, Yardsign, and Zircon. Each band will perform in just one slot. The order must meet the following constraints: Vegemite performs in an earlier slot than Zircon. Wellspring and Zircon each perform in an earlier slot than Xpert. Uneasy performs in one of the last three slots. Yardsign performs in one of the first three slots.","If Zircon performs in an earlier slot than Yardsign, which one of the following is the earlist slot in which Wellspring could perform?",two,three,four,five,six,choice_c
 3,LP,"A concert promoter is filling the six slots at a benefit concert. The slots, from earliest to latest, are numbered slot one through slot six. The slots will be filled by six bands -- Uneasy, Vegemite, Wellspring, Xpert, Yardsign, and Zircon. Each band will perform in just one slot. The order must meet the following constraints: Vegemite performs in an earlier slot than Zircon. Wellspring and Zircon each perform in an earlier slot than Xpert. Uneasy performs in one of the last three slots. Yardsign performs in one of the first three slots.","If Vegemite performs in slot three, which one of the following must be true?",Uneasy performs in an earlier slot than Xpert.,Wellspring performs in an earlier slot than Zircon.,Xpert performs in an earlier slot than Uneasy.,Yardsign performs in an earlier slot than Wellspring.,Zircon performs in an earlier slot than Uneasy.,choice_b
@@ -27,53 +27,80 @@ q_num,q_type,prompt,question,choice_a,choice_b,choice_c,choice_d,choice_e,correc
 26,LR,"Humorous television advertisements are the only effective ones. For if something is humorous it will not only attract people's attention, it will hold their attention long enough for a message to be conveyed. And, obviously, for an advertisement to be effective it must convey the its message.",Which of the following most accurately describes a flaw in the argument?,It takes for granted that nothing but humor can attract a person's attention and hold it long enough for a message to be conveyed.,It confuses attracting a person's attention with holding a person's attention long enough for a message to be conveyed.,It treats a necessary condition for an advertisement's being effective as if it were a sufficient condition.,"It uses two senses of the term ""effective"" without differentiating them.",It takes for granted that an advertisement's only purpose is to convey its message.,choice_a
 27,LR,"Physician: Stories of people developing serious health provlems shortly after receiving vaccinations have give rise ot the question of whether vaccination is safe. But even if those stories are true, they need not be cause for concern. With millions of people being vaccinated every year, it is to be expected that some will develop health problems purely by coincidence shortly after receiving vaccinations.","Which of the following, if true, would most strengthen the physician's argument?","For the most part, stories of people developing serious health problems shortly after reciving vaccinations involve vaccines that were recently introduced.","Some of the illnesses that vaccines are designed to prevent have become so rare that even if people are not vaccinated, they are unlikely to contract those illnesses.","People are no more likely, on average, to develop serious health problems shortly after receiving vaccinations than shortly before receiving vaccinations.",The health problems that some people have developed shortly after receiving vaccinations have been more serious than the health problems that the vaccines were intended to prevent.,"In a few cases in which people developed health problems shortly after taking other medications, these problems were initially attributed to coincidence but were later determined to be due to the medications.",choice_c
 28,LR,"Sharita: Anyone who owns a cat should have it spayed or neutered unless they are willing to take care of the cat’s offspring. It is because people fail to do this that there are so many stray cats around. Chad: Stray cats are not only a nuisance, they spread 
-diseases and cause injuries to other cats and to humans. People feed these animals out of kindness, but doing so only exacerbates the problem unless the cats are then captured and adopted. ",Sharita’s and Chad’s statements provide the most support for the claim that they agree about which one of the following?,It is usually wrong to feed stray cats. ,There are more stray cats than there should be.,"Stray cats are a problem because of the risk they 
-pose to humans.", Stray cats spread diseases to other cats.,It is mainly out of kindness that people feed stray.,choice_b
+diseases and cause injuries to other cats and to humans. People feed these animals out of kindness, but doing so only exacerbates the problem unless the cats are then captured and adopted. 
+",Sharita’s and Chad’s statements provide the most support for the claim that they agree about which one of the following?,It is usually wrong to feed stray cats. ,There are more stray cats than there should be.,"Stray cats are a problem because of the risk they 
+pose to humans.
+", Stray cats spread diseases to other cats.,It is mainly out of kindness that people feed stray.,choice_b
 29,LR,"Detective: People who repeatedly commit crimes like embezzlement or bribery without being caught tend to become more confident. With each success, they believe that getting caught is less likely. However, the more crimes a person commits, the greater the chance that one of those crimes will be solved. It is therefore likely that most people who commit embezzlement or bribery will eventually be caught. ",Which one of the following is an assumption required by the detective’s argument?,"The majority of people who commit 
 embezzlement or bribery do so repeatedly.","People who commit embezzlement or bribery 
 tend to be people who feel confident.","Embezzlement and bribery are more likely to be 
-solved than are many other types of crimes.","People who repeatedly commit embezzlement 
+solved than are many other types of crimes.
+","People who repeatedly commit embezzlement 
 or bribery become more and more careless the longer they avoid detection.","No one who commits embezzlement or bribery is 
-ever caught the first time.",choice_a
+ever caught the first time.
+",choice_a
 30,LR,"If grain prices double then the average price of a loaf of 
 bread will rise between 10 and 15 percent, whereas the price of grain-fed beef will come close to doubling.","Which one of the following would, if true, most contribute to an explanation of the phenomenon described above","Farmers engaged in very large-scale cattle 
 production generally try to reduce the labor costs involved in the production and sale of beef.","The wholesale price per pound of beef is 
 approximately ten times the wholesale price per pound of bread.","The labor and marketing costs in producing and selling bread represent most of its cost, but the cost of feeding cattle represents most of the cost of producing beef.","Only an insignificantly small proportion of the 
 beef sold in retail markets is produced from cattle fed on grass rather than grain.","The vast majority of retail grocery outlets 
-purchase the bread they sell from small independent bakers but purchase the meat they sell from large wholesale processing operations. ",choice_c
+purchase the bread they sell from small independent bakers but purchase the meat they sell from large wholesale processing operations. 
+",choice_c
 31,LR," Mark: The decongestant drug Zokaz was discontinued 
 by its manufacturer because long-term studies revealed that it increased the risk of heart attack. Qualzan, another decongestant, works by essentially the same physiological mechanism as Zokaz. So Qualzan probably also increases the risk of heart attack. Kathy: The decongestive effects of the two drugs do stem 
-from the same physiological mechanism. But since they are different chemically, the two drugs probably have different side effects. ",Which one of the following is a technique of reasoning used in Kathy’s response to Mark?, using a product’s overall record of safety as evidence that the product is not linked to a particular health problem,"attempting to discredit an argument by comparing 
-it to another obviously flawed argument that is logically parallel",arguing against a conclusion by raising questions about the validity of scientific studies cited in support of that conclusion,attempting to undermine an argument by showing that it is incompatible with a fundamental principle of medicine,"challenging an argument from analogy by focusing on a dissimilarity between the things being compared ",choice_e
-32,LR,"CEO: We have been falsely criticized for not being an environmentally responsible corporation. Environmentally responsible corporations are corporations that do all they can to pollute less. Our current production methods pollute significantly less than our old methods did, and there currently are no methods that do not produce any pollution. ",The reasoning in the CEO’s argument is flawed in that it ,"takes for granted that production methods that do 
+from the same physiological mechanism. But since they are different chemically, the two drugs probably have different side effects. 
+",Which one of the following is a technique of reasoning used in Kathy’s response to Mark?, using a product’s overall record of safety as evidence that the product is not linked to a particular health problem,"attempting to discredit an argument by comparing 
+it to another obviously flawed argument that is logically parallel",arguing against a conclusion by raising questions about the validity of scientific studies cited in support of that conclusion,attempting to undermine an argument by showing that it is incompatible with a fundamental principle of medicine,"challenging an argument from analogy by focusing on a dissimilarity between the things being compared 
+",choice_e
+32,LR,"CEO: We have been falsely criticized for not being an environmentally responsible corporation. Environmentally responsible corporations are corporations that do all they can to pollute less. Our current production methods pollute significantly less than our old methods did, and there currently are no methods that do not produce any pollution. 
+",The reasoning in the CEO’s argument is flawed in that it ,"takes for granted that production methods that do 
 not produce pollution cannot be developed","fails to take into account the possibility that 
-different causes can have similar effects","generalizes too hastily from the inapplicability 
+different causes can have similar effects
+","generalizes too hastily from the inapplicability 
 of a specific criticism to the inapplicability of a class of criticisms","takes for granted that because the company has 
-attempted to reduce the amount of pollution produced, they must have succeeded","ignores the possibility that there are currently 
-production methods that would allow the corporation to produce less pollution than it does now ",choice_e
+attempted to reduce the amount of pollution produced, they must have succeeded
+","ignores the possibility that there are currently 
+production methods that would allow the corporation to produce less pollution than it does now 
+",choice_e
 33,LR,"A recent study showed that people who address problems 
-quickly and directly are significantly less likely to have gum disease than are people who react to problems by refusing to think about them. Since stress can have a negative effect on the immune system, the study’s results clearly indicate that some forms of gum disease are caused or aggravated by suppression of the immune system. ",The argument requires the assumption that ,"painful conditions will interfere with a person’s 
+quickly and directly are significantly less likely to have gum disease than are people who react to problems by refusing to think about them. Since stress can have a negative effect on the immune system, the study’s results clearly indicate that some forms of gum disease are caused or aggravated by suppression of the immune system. 
+",The argument requires the assumption that ,"painful conditions will interfere with a person’s 
 ability to address problems quickly and directly","refusing to think about something troubling 
-contributes to a person’s level of stress"," people who have highly stressful lives tend to 
-address problems quickly and directly","people who tend to address problems quickly and 
-directly will invariably seek dental care at the first sign of problems"," the reason some people refuse to think about 
-problems is that they find addressing problems to be stressful ",choice_b
+contributes to a person’s level of stress
+"," people who have highly stressful lives tend to 
+address problems quickly and directly
+","people who tend to address problems quickly and 
+directly will invariably seek dental care at the first sign of problems
+"," the reason some people refuse to think about 
+problems is that they find addressing problems to be stressful 
+",choice_b
 34,LR,"A science class stored one selection of various fruits 
 at 30 degrees Celsius, a similar selection in similar conditions at 20 degrees, and another similar selection in similar conditions at 10 degrees. Because the fruits stored at 20 degrees stayed fresh longer than those stored at 30 degrees, and those stored at 10 degrees stayed fresh longest, the class concluded that the cooler the temperature at which these varieties of fruits are stored, the longer they will stay fresh.",The class’s reasoning is flawed in that the class,"generalized too readily from the fruits it tested to 
-fruits it did not test","ignored the effects of other factors such as 
-humidity and sunlight on the rate of spoilage","too readily extrapolated from a narrow range of 
-temperatures to the entire range of temperatures","assumed without proof that its thermometer was 
-reliable"," neglected to offer any explanation for the results 
-it discovered",choice_c
+fruits it did not test
+","ignored the effects of other factors such as 
+humidity and sunlight on the rate of spoilage
+","too readily extrapolated from a narrow range of 
+temperatures to the entire range of temperatures
+","assumed without proof that its thermometer was 
+reliable
+"," neglected to offer any explanation for the results 
+it discovered
+",choice_c
 35,LR,"Though Earth’s human population is increasing, it 
-currently uses only a relatively small fraction of the supply of fresh water. Thus, claims that water shortages will plague humankind in the near future unless population growth trends change are simply mistaken. ","Which one of the following, if true, most seriously weakens the argument above?","Population growth trends are notoriously hard to 
-predict with reasonable accuracy.",The amount of fresh water available to meet the needs of Earth’s population varies significantly from region to region.,"Not all of Earth’s population will adopt water 
-conservation methods in the near future."," If Earth’s population continues to increase, it will 
-eventually outstrip all available resources.","The percentage of fresh water used for agriculture 
-is likely to grow more Quickly than is the percentage used for industry.",choice_b
+currently uses only a relatively small fraction of the supply of fresh water. Thus, claims that water shortages will plague humankind in the near future unless population growth trends change are simply mistaken. 
+","Which one of the following, if true, most seriously weakens the argument above?","Population growth trends are notoriously hard to 
+predict with reasonable accuracy.
+",The amount of fresh water available to meet the needs of Earth’s population varies significantly from region to region.,"Not all of Earth’s population will adopt water 
+conservation methods in the near future.
+"," If Earth’s population continues to increase, it will 
+eventually outstrip all available resources.
+","The percentage of fresh water used for agriculture 
+is likely to grow more Quickly than is the percentage used for industry.
+",choice_b
 36,LR,"Consultant: The dramatic improvements in productivity 
 achieved during the Industrial Revolution resulted in large part from standardization of processes and procedures coupled with centralization of planning and decision making. Yet, in recent years, many already productive companies have further improved their productivity by giving individual employees greater influence in decision making and in how they do their work. ","Which one of the following, if true, most helps to resolve the apparent paradox in the consultant’s statements?","Most companies still try to improve productivity 
-mainly through greater standardization and centralization of decision making.","Increased productivity is not the only benefit of 
+mainly through greater standardization and centralization of decision making.
+","Increased productivity is not the only benefit of 
 giving individual employees greater control over their work; job satisfaction increases as well.",Most of the increases in industrial productivity that have occurred in recent years have been due to the introduction of advanced technology like industrial robots.,The innovations of the Industrial Revolution are only now being applied in those companies in which individual employees have traditionally been entirely in control of how they do their work.,Increases in productivity in highly productive companies depend on management’s broad application of innovative ideas solicited from individual employees about their work.,choice_e
 37,LR,"Professor: The most important function of epic poetry is to transmit the values by which a group of people is to live. This transmission is accomplished not by an explicit discussion of those values, but rather by their embodiment in heroic figures, who are presented as role models. Imitating those role models gives meaning and direction to the lives of those who hear the poems. ","If the professor’s statements are true, which one of the following must also be true?",An important function of poetry is to give meaning and direction to the lives of those who hear or read it.,Epic poems accomplish their most important function by presenting heroic figures as role models.,"When values are represented in poetry, they are rarely if ever set forth explicitly.","For many groups of people, heroic figures serve as role models embodying the values by which those people are to live.","Only epic poetry presents heroic figures as role models that, if imitated, give meaning and direction to the lives of those who hear it.",choice_b
 38,LR,"Letter to the editor: You say that if the government were to confiscate a portion of the wages of convicted burglars when they reenter the workforce, it would be a form of stealing, hence an abuse of power. Yet under the proposal now being considered, the government would confiscate such wages in order to fund an account to compensate burglary victims. So even if confiscating a portion of burglars’ wages were a form of stealing, it would still be justified. ","Which one of the following principles, if valid, most helps to support the argument in the letter to the editor?",Money stolen from a burglar should be given to that burglar’s victims.,Burglars are obligated to provide compensation to the same individuals they victimized.,The motive prompting an action determines whether or not that action is justified.,A crime is justified only if it is a means of compensating people who deserve compensation. ,Stealing is never justified even if it benefits someone who has been a burglary victim.,choice_c

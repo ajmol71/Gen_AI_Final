@@ -29,3 +29,153 @@
 27,tf_distil_bert_for_question_answering,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______.",,0
 28,tf_distil_bert_for_question_answering,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.","the word that best replaces the "" _ _ _ _ _ """,0
 29,tf_distil_bert_for_question_answering,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.","the word that best replaces the "" _ _ _ _ _ """,0
+tf_roberta_for_question_answering,AR,Helmet is to head as Shoe is to _____.," Here are the options: A. knee  B. foot, C. sock, D. hat, E. toe the word that best replaces the """,0
+tf_roberta_for_question_answering,AR,Cow is to human as Fly is to ______.," Here are the options: A. frog  B. hop, C. buzz, D. fly, E. cow the word that best replaces the """,0
+tf_roberta_for_question_answering,AR,Ruby is to corundum as Diamond is to ______.,,0
+tf_roberta_for_question_answering,AR,Aphrodite is to Venus as Roman is to ______., Here are the options: A. Persian  B. Greek,0
+tf_roberta_for_question_answering,AR,4 is to 16 as 8 is to ______.," Here are the options: A. 24  B. 36, C. 48, D. 56",0
+tf_roberta_for_question_answering,AR,Fork is to spaghetti as spoon is to ______.," Here are the options: A. human  B. bowl, C. eat, D. wheat, E. cereal the word that best replaces the """,0
+tf_roberta_for_question_answering,AR,Buying food at the grocery store is like ____., Here are the options: A. Getting gas at a gas station,0
+tf_roberta_for_question_answering,AR,Finding hidden treasure is like ______.," Here are the options: A. Opening a box  B. Getting a present, C. Having a party, D. Winning the lottery, E. Going on a scavenger hunt the word that best replaces the """,0
+tf_roberta_for_question_answering,AR,Starting a new book is like ______.," Here are the options: A. Beginning a show  B. Reading a book, C. Starting a road",0
+tf_roberta_for_question_answering,AR,Laugh is to cry as ______.," Here are the options: A. Happy is to sad.  B. Cry is to laugh., C. Happy is to smile., D. Sad is to smile., E. Sad is to cry",0
+tf_roberta_for_question_answering,AR,Drive is to car as ______.," Here are the options: A. Hover is to board.  B. Play is to game., C. Grow is to nurture., D. Engine is to bike., E. Engine is to truck. the word",0
+tf_roberta_for_question_answering,AR,Writing relates to ink as _____.," Here are the options: A. Painting relates to paint.  B. Car relates to oil., C. Book relates to pen., D. Person relates to eat., E. Friend relates to marriage. the word that best replaces the """,0
+tf_roberta_for_question_answering,AR,A lake is most similar to a _______.,,0
+tf_roberta_for_question_answering,AR,A bandaid is most similar to ______.," Here are the options: A. a cut  B. a doctor, C. a medicine, D. a piece",0
+tf_roberta_for_question_answering,AR,A sandwich is most similar to _____.,,0
+tf_roberta_for_question_answering,DR,"All mountains are large. Everest is a mountain, so Everest is _______.",,0
+tf_roberta_for_question_answering,DR,"All dogs are nice. Steve is a dog, so steve is _______.", Here are the options: A. a dog,0
+tf_roberta_for_question_answering,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______."," Here are the options: A. a puppet  B. a human, C. scary, D. small, E. a ventriloquist the word that best replaces the """,0
+tf_roberta_for_question_answering,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______.",". dumb  B. large, C. strong, D. ugly, E. hairy the word that best replaces the """,0
+tf_roberta_for_question_answering,DR,"Siblings always fight. Me and Jose are siblings, so _______.", Here are the options: A. we always have each other's backs.  B. we always,0
+tf_roberta_for_question_answering,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______.", Here are the options: A. Jessamine must like,0
+tf_roberta_for_question_answering,DR,"Cats like going outside, so ______.",,0
+tf_roberta_for_question_answering,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______."," Here are the options: A. a bad person  B. a politician, C. a senator, D. a h",0
+tf_roberta_for_question_answering,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. ", Here are the options: A. be a dog  B. not be,0
+tf_roberta_for_question_answering,DR,"The sky is not green. The ozone layer is green, so it _______.", is polluted. the word,0
+tf_roberta_for_question_answering,DR,"My plant is huge. This fern is tiny, so _______.",,0
+tf_roberta_for_question_answering,DR,"I have three dogs. Dogs and cats can't live together, so ______.", Here are the options: A. My dogs don't like,0
+tf_roberta_for_question_answering,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______."," Here are the options: A. from New Zealand.  B. from the United States., C. Mark., D. not Mark., E. okay with traveling. the word",0
+tf_roberta_for_question_answering,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.",,0
+tf_roberta_for_question_answering,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.", Here are the options: A. I had coffee.  B. I had money,0
+tf_roberta_for_question_answering,AR,Helmet is to head as Shoe is to _____.,,0
+tf_roberta_for_question_answering,AR,Cow is to human as Fly is to ______.,,0
+tf_roberta_for_question_answering,AR,Ruby is to corundum as Diamond is to ______.,,0
+tf_roberta_for_question_answering,AR,Aphrodite is to Venus as Roman is to ______.,,0
+tf_roberta_for_question_answering,AR,4 is to 16 as 8 is to ______.,,0
+tf_roberta_for_question_answering,AR,Fork is to spaghetti as spoon is to ______.,,0
+tf_roberta_for_question_answering,AR,Buying food at the grocery store is like ____.," walk, C. Spending time with friends, D. Going to the movies, E. Buying",0
+tf_roberta_for_question_answering,AR,Finding hidden treasure is like ______.,,0
+tf_roberta_for_question_answering,AR,Starting a new book is like ______.,,0
+tf_roberta_for_question_answering,AR,Laugh is to cry as ______.,,0
+tf_roberta_for_question_answering,AR,Drive is to car as ______.,,0
+tf_roberta_for_question_answering,AR,Writing relates to ink as _____.,,0
+tf_roberta_for_question_answering,AR,A lake is most similar to a _______.,,0
+tf_roberta_for_question_answering,AR,A bandaid is most similar to ______.,,0
+tf_roberta_for_question_answering,AR,A sandwich is most similar to _____.,,0
+tf_roberta_for_question_answering,DR,"All mountains are large. Everest is a mountain, so Everest is _______.",,0
+tf_roberta_for_question_answering,DR,"All dogs are nice. Steve is a dog, so steve is _______.",,0
+tf_roberta_for_question_answering,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______.",,0
+tf_roberta_for_question_answering,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______.",,0
+tf_roberta_for_question_answering,DR,"Siblings always fight. Me and Jose are siblings, so _______.",,0
+tf_roberta_for_question_answering,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______.",""" is",0
+tf_roberta_for_question_answering,DR,"Cats like going outside, so ______.",,0
+tf_roberta_for_question_answering,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______.",,0
+tf_roberta_for_question_answering,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. ",,0
+tf_roberta_for_question_answering,DR,"The sky is not green. The ozone layer is green, so it _______.",,0
+tf_roberta_for_question_answering,DR,"My plant is huge. This fern is tiny, so _______.",,0
+tf_roberta_for_question_answering,DR,"I have three dogs. Dogs and cats can't live together, so ______.",,0
+tf_roberta_for_question_answering,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______.",,0
+tf_roberta_for_question_answering,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.",,0
+tf_roberta_for_question_answering,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.",,0
+roberta,AR,Helmet is to head as Shoe is to _____.,,0
+roberta,AR,Cow is to human as Fly is to ______.,,0
+roberta,AR,Ruby is to corundum as Diamond is to ______.,,0
+roberta,AR,Aphrodite is to Venus as Roman is to ______.,,0
+roberta,AR,4 is to 16 as 8 is to ______.,,0
+roberta,AR,Fork is to spaghetti as spoon is to ______.,,0
+roberta,AR,Buying food at the grocery store is like ____.,"""",0
+roberta,AR,Finding hidden treasure is like ______.,"""",0
+roberta,AR,Starting a new book is like ______.,"""",0
+roberta,AR,Laugh is to cry as ______.,"""",0
+roberta,AR,Drive is to car as ______.,"""",0
+roberta,AR,Writing relates to ink as _____.,,0
+roberta,AR,A lake is most similar to a _______.,,0
+roberta,AR,A bandaid is most similar to ______.,,0
+roberta,AR,A sandwich is most similar to _____.,"""",0
+roberta,DR,"All mountains are large. Everest is a mountain, so Everest is _______.",,0
+roberta,DR,"All dogs are nice. Steve is a dog, so steve is _______.",,0
+roberta,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______.",,0
+roberta,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______.",,0
+roberta,DR,"Siblings always fight. Me and Jose are siblings, so _______.",,0
+roberta,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______.","""",0
+roberta,DR,"Cats like going outside, so ______."," cat Peter likes to go outside.  B. my cat Peter must be outside., C. Peter, my cat, is old., D. my cat Peter has claws., E. my cat Peter eats grass. the word that best replaces the ""_____""",0
+roberta,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______.","""",0
+roberta,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. ",,0
+roberta,DR,"The sky is not green. The ozone layer is green, so it _______.","""",0
+roberta,DR,"My plant is huge. This fern is tiny, so _______.",,0
+roberta,DR,"I have three dogs. Dogs and cats can't live together, so ______.",,0
+roberta,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______.","""",0
+roberta,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.","""",0
+roberta,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.","""",0
+flanT5,AR,Helmet is to head as Shoe is to _____.,Here,0
+flanT5,AR,Cow is to human as Fly is to ______.,Here,0
+flanT5,AR,Ruby is to corundum as Diamond is to ______.,Here,0
+flanT5,AR,Aphrodite is to Venus as Roman is to ______.,Here,0
+flanT5,AR,4 is to 16 as 8 is to ______.,Here,0
+flanT5,AR,Fork is to spaghetti as spoon is to ______.,Here,0
+flanT5,AR,Buying food at the grocery store is like ____.,Here,0
+flanT5,AR,Finding hidden treasure is like ______.,Here,0
+flanT5,AR,Starting a new book is like ______.,Here,0
+flanT5,AR,Laugh is to cry as ______.,Here,0
+flanT5,AR,Drive is to car as ______.,Here,0
+flanT5,AR,Writing relates to ink as _____.,Here,0
+flanT5,AR,A lake is most similar to a _______.,Here,0
+flanT5,AR,A bandaid is most similar to ______.,Here,0
+flanT5,AR,A sandwich is most similar to _____.,Here,0
+flanT5,DR,"All mountains are large. Everest is a mountain, so Everest is _______.",Here,0
+flanT5,DR,"All dogs are nice. Steve is a dog, so steve is _______.",Here,0
+flanT5,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______.",Here,0
+flanT5,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______.",Here,0
+flanT5,DR,"Siblings always fight. Me and Jose are siblings, so _______.",Here,0
+flanT5,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______.",Here,0
+flanT5,DR,"Cats like going outside, so ______.",Here,0
+flanT5,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______.",Here,0
+flanT5,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. ",Here,0
+flanT5,DR,"The sky is not green. The ozone layer is green, so it _______.",Here,0
+flanT5,DR,"My plant is huge. This fern is tiny, so _______.",Here,0
+flanT5,DR,"I have three dogs. Dogs and cats can't live together, so ______.",Here,0
+flanT5,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______.",Here,0
+flanT5,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.",Here,0
+flanT5,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.",Here,0
+qwen,AR,Helmet is to head as Shoe is to _____.,Here,0
+qwen,AR,Cow is to human as Fly is to ______.,Here,0
+qwen,AR,Ruby is to corundum as Diamond is to ______.,Here,0
+qwen,AR,Aphrodite is to Venus as Roman is to ______.,Here,0
+qwen,AR,4 is to 16 as 8 is to ______.,Here,0
+qwen,AR,Fork is to spaghetti as spoon is to ______.,Here,0
+qwen,AR,Buying food at the grocery store is like ____.,Here,0
+qwen,AR,Finding hidden treasure is like ______.,Here,0
+qwen,AR,Starting a new book is like ______.,Here,0
+qwen,AR,Laugh is to cry as ______.,Here,0
+qwen,AR,Drive is to car as ______.,Here,0
+qwen,AR,Writing relates to ink as _____.,Here,0
+qwen,AR,A lake is most similar to a _______.,Here,0
+qwen,AR,A bandaid is most similar to ______.,Here,0
+qwen,AR,A sandwich is most similar to _____.,Here,0
+qwen,DR,"All mountains are large. Everest is a mountain, so Everest is _______.",Here,0
+qwen,DR,"All dogs are nice. Steve is a dog, so steve is _______.",Here,0
+qwen,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______.",Here,0
+qwen,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______.",Here,0
+qwen,DR,"Siblings always fight. Me and Jose are siblings, so _______.",Here,0
+qwen,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______.",Here,0
+qwen,DR,"Cats like going outside, so ______.",Here,0
+qwen,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______.",Here,0
+qwen,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. ",Here,0
+qwen,DR,"The sky is not green. The ozone layer is green, so it _______.",Here,0
+qwen,DR,"My plant is huge. This fern is tiny, so _______.",Here,0
+qwen,DR,"I have three dogs. Dogs and cats can't live together, so ______.",Here,0
+qwen,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______.",Here,0
+qwen,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.",Here,0
+qwen,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.",Here,0

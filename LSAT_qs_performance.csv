@@ -29,3 +29,156 @@
 27,tf_distil_bert_for_question_answering,12,LP,If Myers is on the team,0
 28,tf_distil_bert_for_question_answering,55,LP,complete and accurate,0
 29,tf_distil_bert_for_question_answering,81,LP,[CLS],0
+tf_roberta_for_question_answering,111,LR,,0
+tf_roberta_for_question_answering,95,LR,,0
+tf_roberta_for_question_answering,109,LR," it is beneficial to their health.  B. It draws a comparison based on popular belief rather than on scientific opinion., C. It fails to consider metods of achieving the same beneficial effects that do not involve alcohol., D. It draws a conclusion about alcohol in general from a premise about moderate alcohol consumption., E. It fails to consider that alcohol may have no effect on many bacteria that cause",0
+tf_roberta_for_question_answering,128,LR,,0
+tf_roberta_for_question_answering,100,LR,,0
+tf_roberta_for_question_answering,99,LR,,0
+tf_roberta_for_question_answering,97,LR,,0
+tf_roberta_for_question_answering,106,LR," the amount of television they watch.  B. A person is less likely to live in an area that is prone to natural disasters if that person watches an above-average amount of television than if that person watches a below-average amount of television., C. People who watch a below-average amount",0
+tf_roberta_for_question_answering,92,LR,,0
+tf_roberta_for_question_answering,129,LR," the names of the bidders were not disclosed to the public.  B. A retired high-ranking military officer now owns a company that contracts with the Department of Defense. He uses his contracts with the department officials to help his compnay obtain contracts. , C. After a tax reform law was enacted, an official with the government's revenue agency obtained a 20 percent reduction in personal tax income by setting up tax shelters that were allowed by the new law., D. A Finance Department officail, one of the few people who knew",0
+tf_roberta_for_question_answering,46,LR,,0
+tf_roberta_for_question_answering,26,LR,,0
+tf_roberta_for_question_answering,35,LR," 
+predict with reasonable accuracy.  B. The amount of fresh water available to meet the needs of Earth’s population varies significantly from",0
+tf_roberta_for_question_answering,94,LR,,0
+tf_roberta_for_question_answering,120,LR," the recommended daily intake of vitamins A and D., D. Most people who eat vitamin-fortified foods should not take any vitamin supplements., E. Manufacturers are unaware that many people consume viatmin-fortified foods in amounts greater than standard serving sizes.Which one of the following is most",0
+tf_roberta_for_question_answering,72,LP,,0
+tf_roberta_for_question_answering,56,LP,,0
+tf_roberta_for_question_answering,70,LP," which Felix can be interviewed?</s></s>Each of six job candidates—Felix, Gilly, Harry, Inga, Jade and Kelsey—must be interviewed by one of three managers—Rob, Sarah and Todd—in consecutive time slots. No two candidates will be interviewed at the same",0
+tf_roberta_for_question_answering,89,LP,"Which of the following could be true?</s></s>Seven students—K, L, M, N, O, P, and R—give presentations, one at a time",0
+tf_roberta_for_question_answering,61,LP,,0
+tf_roberta_for_question_answering,60,LP,,0
+tf_roberta_for_question_answering,58,LP,,0
+tf_roberta_for_question_answering,67,LP,": Gilly; Rob: Felix; Todd: Harry, C. Sarah: Jade; Todd: Inga; Rob: Kelsey; Rob: Felix; Todd: Harry; Sarah: Gilly, D. Sarah: Inga; Sarah: Felix; Todd: Harry; Rob: Kelsey; Sarah: Gilly; Todd: Jade, E. Todd: Kelsey; Sarah: Inga; Todd: Kelsey; Sarah: Jade; Rob: Felix; Todd: Harry Which one of the following is an acceptable matching of candidates with managers, listed from the first interview to the last",0
+tf_roberta_for_question_answering,53,LP,,0
+tf_roberta_for_question_answering,90,LP," the following must be false?</s></s>Seven students—K, L, M, N, O, P, and R—give presentations, one at a time",0
+tf_roberta_for_question_answering,23,LP," is in Howard Audituorium., C. The second lecture is on rails and is in Howard Auditorium., D. The second lecture is on terns and is in Gladwyn Hall., E. The fourth lecture is on terns and is in Howard Auditorium.If the third lecture is on sandpipers, which one of the following could be true?</s></s>A naturalist will give give lectures, each on a different type",0
+tf_roberta_for_question_answering,3,LP," Uneasy., D. Yardsign performs in an earlier slot than Wellspring., E. Zircon performs in an earlier slot than Uneasy.If Vegemite performs in slot three, which one of the following must be true?</s></s>A concert promoter is filling the six slots at a benefit concert. The slots, from",0
+tf_roberta_for_question_answering,12,LP,,0
+tf_roberta_for_question_answering,55,LP,", Urma, and Vivian—each own one or more of only three types of dogs: King Charles Spaniel, Labrador, and Maltese. No child owns more than one of any particular breed",0
+tf_roberta_for_question_answering,81,LP,,0
+tf_roberta_for_question_answering,111,LR," 30 years, and if at some point half of the population of Earth emigrated elsewhere, then after 30 years Earth would be just as crowded as it had been before the emigration., D. The population of Earth's surface will probably continue to grow geometrically even if temporary solutions to population growth, such as colonizing other plants, are adopted., E. Learning how to colonize other planets would, at best, be a temporary solution to the overcrowding of Earth.Which one of the following most accurately expresses the conclusion drawn in the essayist's argument?</s></s>Essayist: If Earth's population continues to grow geometrically, then in a few centuries there will be ten people for every square meter (approximately one person per square foot) of Earth's surface. Some people have claimed that this will probably not be a problem, since humans will have learned by then how to colonize other planets. This would, however, be a temporary solution at best: if the population continues to double every 30 years, and if in the year 2500 half of Earth's population emigrated to Mars, then by",0
+tf_roberta_for_question_answering,95,LR,,0
+tf_roberta_for_question_answering,109,LR,,0
+tf_roberta_for_question_answering,128,LR,,0
+tf_roberta_for_question_answering,100,LR," carry a good- luck charm. After all, Annie, Francisco, and Sean carry good-luck charms, and these three people are lottery winners.  B. Similarly, you could conclude that Jesse should not expect to get food poisoning. After all, Jesse, Doris, and Christine all attended the company picnic, and only Christine has gotten food poisoning as a result., C. Similarly, you could conclude that Eric, Diane, and Martin are the only employees who will be laid off. After all, any employee hired within the last year can expect to be laid off, and these three employees are the only ones who were hired within the last year., D. Similarly, you could conclude that Ken, Norma, and Mary routinely drive faster than the speed limit. After all, if you routinely exceed the speed limit, you can expect to get a speeding ticket eventually, and these three people have gotten speeding tickets., E. Similarly, you could conclude that Jack, Stephen, and Tina can expect to get jobs after they complete their university education. After all, these three people attend Perry University, and most people who graduated from Perry last year found jobs.Which one of the following demonstrates most effectively by parallel reasoning that the argument in the advertisement is flawed?</s></s>Advertisement: VIVVY, a video-based foreign language course for",0
+tf_roberta_for_question_answering,99,LR,,0
+tf_roberta_for_question_answering,97,LR,,0
+tf_roberta_for_question_answering,106,LR,,0
+tf_roberta_for_question_answering,92,LR," entirely on that product’s popularity, D. fails to consider that a tool might not effectively perform its intended function, E. rejects a claim because of its source rather than its content The columnist’s argument is most vulnerable to criticism on the grounds that it</s></s>Columnist: An information design expert has argued that using the popular presentation-graphics software GIAPS, with its autopresentation wizard and simplistic premade templates, leads people to develop ineffective presentations. But that is absurd. GIAPS is just a tool, so it cannot be responsible for bad presentations. The responsibility must lie with",0
+tf_roberta_for_question_answering,129,LR,,0
+tf_roberta_for_question_answering,46,LR," programmer, since almost every programmer who works for Coderight Software has at least ten years experience, and Donna will probably be hired as a programmer by Coderight, C. almost all of Acme’s employees oppose the pending merger with Barrington Corporation, since almost all of Acme’s employees are factory workers, and almost all of the factory workers at Acme oppose the merger, D. Robinson will probably be appointed as president of Sifton University, since almost every one of Sifton’s previous presidents had a Ph.D., and Robinson has a Ph.D., E. the novel Safekeeping will probably earn a profit for its publisher, Peninsula Press, since almost every novel published by Peninsula over the last ten years has been profitable.The flawed nature of the company president’s argument can most effectively be demonstrated by noting that, by parallel reasoning, we could conclude that</s></s>Company president: Almost every really successful product introduced in",0
+tf_roberta_for_question_answering,26,LR,,0
+tf_roberta_for_question_answering,35,LR,,0
+tf_roberta_for_question_answering,94,LR," primary goal of any university is to serve the educational needs of its community.  B. Most universities adequately serve the educational needs of the communities in which they are located., C. The main reason people have for attending a university is to prepare themselves for a career., D. In",0
+tf_roberta_for_question_answering,120,LR,,0
+tf_roberta_for_question_answering,72,LP,,0
+tf_roberta_for_question_answering,56,LP," King Charles Spaniel., C. Either Rocky or Tina must own a Maltese., D. At least three children own",0
+tf_roberta_for_question_answering,70,LP,,0
+tf_roberta_for_question_answering,89,LP,,0
+tf_roberta_for_question_answering,61,LP," third, fourth  B. fifth, sixth, C. third, fifth, sixth, seventh, D. fourth, fifth, sixth, E. third, foruth, fifth, sixthIf Tori dances second, which one of the following is a complete and accurate list of all the positions in which Rafael could dance?</s></s>Seven dancers—Mary, Noel, Ophelia, Peter, Rafael, Sue, and Tori—are preparing to perform a new dance in which the dancers form a straight line facing towards the first and tallest dancer. Each dancer, other than the first, must stand immediately behind a dancer taller than him or herself. No two dancers are of the same height. Every dancer must perform in the dance and no other dancers will participate. The heights of the dancers and their positions conform to the following restrictions: 3. Which one of the following must be false? (A) (B) (C) (D) (E) Peter dances second and Noel dances sixth. Tori dances fourth and Ophelia dances sixth. Mary dances first and Peter dances seventh. Ophelia dances third and Sue dances fourth. Rafael dances sixth and Noel dances seventh. 4. If Tori dances second, which one of the following is a complete and accurate list of",0
+tf_roberta_for_question_answering,60,LP," third and Sue dances fourth., E. Rafael dances sixth and Noel dances seventh.Which one of the following must be",0
+tf_roberta_for_question_answering,58,LP,", Tori, Rafael, Sue, Noel, Ophelia  B. Tori, Sue, Mary, Rafael, Ophelia, Noel, Peter, C. Ophelia, Tori, Mary, Rafael, Sue, Peter, Noel, D. Sue, Tori, Ophelia, Mary, Peter, Rafael, Noel, E. Noel, Sue, Ophelia, Rafael, Peter, Mary, ToriWhich one of the following is a possible line-up of dancers, listed from first to last?</s></s>Seven dancers—Mary, Noel, Ophelia, Peter, Rafael, Sue, and Tori—are preparing to perform a new dance in which the dancers form a straight line facing towards the first and tallest dancer. Each dancer, other than the first, must stand immediately behind a dancer taller than him or herself. No two dancers are of the same height. Every dancer must perform in the dance and no other dancers will participate. The heights of the dancers and their positions conform to the following restrictions: 3. Which one of the following must be false? (A) (B) (C) (D) (E) Peter dances second and Noel dances sixth. Tori dances fourth and Ophelia dances sixth. Mary dances first and Peter dances seventh. Ophelia dances third and Sue dances fourth. Rafael dances sixth and Noel dances seventh. 4. If Tori dances second, which one of the following is",0
+tf_roberta_for_question_answering,67,LP,,0
+tf_roberta_for_question_answering,53,LP,,0
+tf_roberta_for_question_answering,90,LP,,0
+tf_roberta_for_question_answering,23,LP,"chers and is in Howard Audituorium., C. The second lecture is on rails and is in Howard Auditorium., D. The second lecture is on terns and is in Gladwyn Hall., E. The fourth lecture is on terns and is in Howard Auditorium.If the third lecture is on sandpipers, which one of the following could be true?</s></s>A naturalist will give give lectures, each on a different type of bird: oystercatchers, petrels, rails, sandpipers, or terns. The lectures must be given either in",0
+tf_roberta_for_question_answering,3,LP,,0
+tf_roberta_for_question_answering,12,LP,,0
+tf_roberta_for_question_answering,55,LP,,0
+tf_roberta_for_question_answering,81,LP,,0
+roberta,111,LR," If Earth's population continues to double every 30 years, and if at some point half of the population of Earth emigrated elsewhere, then after 30 years Earth would be just as crowded as it had been before the emigration., D. The population of Earth's surface will probably continue to grow geometrically even if temporary solutions to population growth, such as colonizing other plants, are adopted., E. Learning how to colonize other planets would, at best, be a temporary solution to the overcrowding of Earth.Which one of the following most accurately expresses the conclusion drawn in the essayist's argument?</s></s>Essayist: If Earth's population continues to grow geometrically, then in a few centuries there will be ten people for every square meter (approximately one person per square",0
+roberta,95,LR,"average organizational skills before they enroll in the seminar., E. Most people who have taken a seminar for building organizational skills in the workplace consequently expend a great amount of time organizing their activities.Which one of the following, if true, would most help to resolve the apparent discrepancy described above?</s></s>Most people",0
+roberta,109,LR,.Which one of the following most accurately expresses a flaw in the reasoning in Peter's,0
+roberta,128,LR," child's tonsils, E. fails to consider that some breathing problems during sleep may be caused by something other than swollen tonsilsThe pediatrician's argumetn is most vulnerable to the criticism that it</s></s>Pediatrician: Swollen tonsils give rise to breathing problems during sleep, and the surgical removal of children's swollen tonsils has been",0
+roberta,100,LR," B. Similarly, you could conclude that Jesse should not expect to get food poisoning. After all, Jesse, Doris, and Christine all attended the company picnic, and only Christine has gotten food poisoning as a result., C. Similarly, you could conclude that Eric, Diane, and Martin are the only employees who will be laid off. After all, any employee hired within the last year can expect to be laid off, and these three employees are the only ones who were hired within the last year., D. Similarly, you",0
+roberta,99,LR,</s>Astronomer: Proponents of,0
+roberta,97,LR,".The conclusion of the argument can be properly drawn if which one of the following is assumed? </s></s>Critic: The recent biography of Shakespeare does not explain what is of most interest about him. It is by an expert on the history of Elizabethan England, and so does a good job of showing what life would have been like for Shakespeare as a man of that time. But it does not explain what made Shakespeare different from his",0
+roberta,106,LR,"average amount of television than if that person watches a below-average amount of television., C. People who watch a below-average amount of television tend to have a fairly accurate idea of the likelihood that they will be victims of a natural disaster., D. People who are well informed about the risks posed by natural disasters tend to have become well informed in some way other than by watching television., E. A person is more likely",0
+roberta,92,LR,</s>Columnist: An information design expert has argued that using the,0
+roberta,129,LR,,0
+roberta,46,LR,,0
+roberta,26,LR,,0
+roberta,35,LR," population varies significantly from region to region., C. Not all of Earth’s population will adopt water 
+conservation methods in the near future., D.  If Earth’s population continues to increase, it will 
+eventually outstrip all available resources., E. The percentage of",0
+roberta,94,LR,".James’s and Margaret’s statements provide the most support for the claim that they disagree over the truth of which one of the following? </s></s>James: Community colleges, by their very nature, work to meet the educational needs of the communities they are in. The same is not true of universities, whose primary goals differ from those of community colleges. Margaret: A primary goal of any university is to serve the needs of the community where it is located. The main reason people have for attending a university is the same",0
+roberta,120,LR,"fortified foods are aware of the recommended daily intake of vitamins A and D.  B. Some people who consume vitamin-fortified foods exceed the recomended daily intake of vitamins A and D., C. Some people mistakenly believe it is healthy to consume more than the recommended daily intake of vitamins A and D., D. Most people who eat vitamin-fortified foods should not take any vitamin supplements., E. Manufacturers are unaware that many people consume viatmin-fortified foods in amounts greater than standard serving sizes.Which one of",0
+roberta,72,LP,"Each of six job candidates—Felix, Gilly, Harry, Inga, Jade and Kelsey—must be interviewed by one of three managers—Rob, Sarah and Todd—in consecutive time slots. No two candidates will be interviewed at the same",0
+roberta,56,LP," two children own the same number and breed of dogs.  B. At least three children own a King Charles Spaniel., C. Either Rocky or Tina must own a Maltese., D. At least three children own a Labrador., E. Tina and Urma have exactly one dog breed in common.If Sally and Tina do not own any of the same breed of dog, which one of the following must be true?</s></s>The five children in a certain neighborhood—Rocky, Sally, Tina, Urma, and Vivian—each own one or more of only three types of",0
+roberta,70,LP,"Each of six job candidates—Felix, Gilly, Harry, Inga, Jade and Kelsey—must be interviewed by one of three managers—Rob, Sarah and Todd—in consecutive time slots. No two candidates will be interviewed at the same time and no interview involves more than one manager. Each manager must interview at least one candidate. The interviews must be scheduled in accordance with the following conditions: After Sarah’s second (and final) interview, Rob must interview exactly one candidate",0
+roberta,89,LP,"Seven students—K, L, M, N, O, P, and R—give presentations, one at a time and in order. The following conditions apply: N presents before L. M presents",0
+roberta,61,LP,,0
+roberta,60,LP,,0
+roberta,58,LP,,0
+roberta,67,LP,"; Todd: Jade; Rob: Kelsey; Rob: Felix; Todd: Harry  B. Sarah: Jade; Todd: Inga; Rob: Kelsey; Sarah: Gilly; Rob: Felix; Todd: Harry, C. Sarah: Jade; Todd: Inga; Rob: Kelsey; Rob: Felix; Todd: Harry; Sarah: Gilly, D. Sarah: Inga; Sarah: Felix; Todd: Harry; Rob: Kelsey; Sarah: Gilly; Todd: Jade, E. Todd: Kelsey; Sarah: Inga; Todd: Kelsey; Sarah: Jade; Rob: Felix; Todd: Harry Which one of",0
+roberta,53,LP," second and Lulu finishes fourth.  B. Kilborn finishes first and Pinwheel finishes sixth., C. Maritime finishes first and Orbit finishes seventh., D. Maritime finishes first and Jasmine finishes third., E. Kilborn finishes second and Orbit finishes fifth.If exactly one boat finishes between Orbit and Flyer, with either Orbit finishing before Flyer or Flyer finishing before Orbit, each of the following could be true EXCEPT</s></s>Seven boats—Flyer, Jasmine, Kilborn, Lulu, Maritime, Orbit, and Pinwheel—finish a race one at a time and consecutively. No other boats compete in the",0
+roberta,90,LP,"Seven students—K, L, M, N, O, P, and R—give presentations, one at a time and in order. The following conditions apply: N presents before L. M presents",0
+roberta,23,LP,"chers and is in Gladwyn Hall.  B. The fifth lecture is on oystercatchers and is in Howard Audituorium., C. The second lecture is on rails and is in Howard Auditorium., D. The second lecture is on terns and is in Gladwyn Hall., E. The fourth lecture is on terns and is in Howard Auditorium.If the third lecture is on sandpipers, which one of the following could be true?</s></s>A naturalist will give give lectures, each on a different type of",0
+roberta,3,LP,".If Vegemite performs in slot three, which one of the",0
+roberta,12,LP," Here are the options: A. Ortega and Schmidt  B. Ortega and Wong, C. Paine and Schmidt, D. Thomson and Yoder, E. Yoder and ZayreWhich one of the following is a pair of employees at least one of whom must be on the team?</s></s>A corporate manager is selecting employees for a research team. The team will include at least four employees, all from among the following eight: Myers, Ortega, Paine, Schmidt, Thomson, Wong, Yoder, and Zayre. The selection is constrained by the following conditions: If Myers is on the team, neither Ortega or Paine can be. If Schmidt is on the team, both Paine and Thomson must also be",0
+roberta,55,LP,each own one or more of only three types of,0
+roberta,81,LP,". Milner: week 1; Octagon: week 7; Quibble: week 8If Landing is not presented any time after Milner is presented, then each of the following could be a partial and accurate list of films with the weeks in which they are presented EXCEPT:</s></s>A film club will present",0
+flanT5,111,LR,E,0
+flanT5,95,LR,B. Most people whose organizational skills in the workplace are below average do not take seminars for building organizational skills in the workplace.,0
+flanT5,109,LR,,0
+flanT5,128,LR,E,0
+flanT5,100,LR,Here,0
+flanT5,99,LR,,0
+flanT5,97,LR,C. Shakespeare was very different from the other men of his time.,0
+flanT5,106,LR,Here,0
+flanT5,92,LR,D. fails to consider that a tool might not effectively perform its intended function,0
+flanT5,129,LR,"D. A Finance Department officail, one of the few people who knew of a plan to tax luxury cars, bought a luxury car just before the plan was announced to the public in order to avoid paying the tax., E. An official with a government agency that regulates securities sold her stock in Acme just after she announced to the public that her agency was investigating Acme for impropoer accounting.Which of the following actions would be unethical according to the principle stated above?</s> It is unethical for government officials to use their knowledge of impending policies to financially benefit themselves",0
+flanT5,46,LR,,0
+flanT5,26,LR,,0
+flanT5,35,LR,B. The amount of fresh water available to meet the needs of Earth’s population varies significantly from region to region,0
+flanT5,94,LR,,0
+flanT5,120,LR,B. Some people who consume vitamin-fortified foods exceed the recomended daily intake of vitamins A and D.,0
+flanT5,72,LP,Here,0
+flanT5,56,LP,Here,0
+flanT5,70,LP,Here,0
+flanT5,89,LP,Here,0
+flanT5,61,LP,Here,0
+flanT5,60,LP,Here,0
+flanT5,58,LP,Here,0
+flanT5,67,LP,,0
+flanT5,53,LP,Here,0
+flanT5,90,LP,Here,0
+flanT5,23,LP,Here,0
+flanT5,3,LP,Here,0
+flanT5,12,LP,D. Thomson and Yoder,0
+flanT5,55,LP,Here,0
+flanT5,81,LP,Here,0
+qwen,111,LR,E,0
+qwen,95,LR,B. Most people whose organizational skills in the workplace are below average do not take seminars for building organizational skills in the workplace.,0
+qwen,109,LR,,0
+qwen,128,LR,E,0
+qwen,100,LR,Here,0
+qwen,99,LR,,0
+qwen,97,LR,C. Shakespeare was very different from the other men of his time.,0
+qwen,106,LR,Here,0
+qwen,92,LR,D. fails to consider that a tool might not effectively perform its intended function,0
+qwen,129,LR,"D. A Finance Department officail, one of the few people who knew of a plan to tax luxury cars, bought a luxury car just before the plan was announced to the public in order to avoid paying the tax., E. An official with a government agency that regulates securities sold her stock in Acme just after she announced to the public that her agency was investigating Acme for impropoer accounting.Which of the following actions would be unethical according to the principle stated above?</s> It is unethical for government officials to use their knowledge of impending policies to financially benefit themselves",0
+qwen,46,LR,,0
+qwen,26,LR,,0
+qwen,35,LR,B. The amount of fresh water available to meet the needs of Earth’s population varies significantly from region to region,0
+qwen,94,LR,,0
+qwen,120,LR,B. Some people who consume vitamin-fortified foods exceed the recomended daily intake of vitamins A and D.,0
+qwen,72,LP,Here,0
+qwen,56,LP,Here,0
+qwen,70,LP,Here,0
+qwen,89,LP,Here,0
+qwen,61,LP,Here,0
+qwen,60,LP,Here,0
+qwen,58,LP,Here,0
+qwen,67,LP,,0
+qwen,53,LP,Here,0
+qwen,90,LP,Here,0
+qwen,23,LP,Here,0
+qwen,3,LP,Here,0
+qwen,12,LP,D. Thomson and Yoder,0
+qwen,55,LP,Here,0
+qwen,81,LP,Here,0
