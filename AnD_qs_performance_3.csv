@@ -1,0 +1,90 @@
+microsoft/Phi-4-mini-instruct,AR,Helmet is to head as Shoe is to _____.,,0
+microsoft/Phi-4-mini-instruct,AR,Cow is to human as Fly is to ______.,,0
+microsoft/Phi-4-mini-instruct,AR,Ruby is to corundum as Diamond is to ______.,,0
+microsoft/Phi-4-mini-instruct,AR,Aphrodite is to Venus as Roman is to ______.,,0
+microsoft/Phi-4-mini-instruct,AR,4 is to 16 as 8 is to ______.,,0
+microsoft/Phi-4-mini-instruct,AR,Fork is to spaghetti as spoon is to ______.,,0
+microsoft/Phi-4-mini-instruct,AR,Buying food at the grocery store is like ____.,,0
+microsoft/Phi-4-mini-instruct,AR,Finding hidden treasure is like ______.,,0
+microsoft/Phi-4-mini-instruct,AR,Starting a new book is like ______.,,0
+microsoft/Phi-4-mini-instruct,AR,Laugh is to cry as ______.,,0
+microsoft/Phi-4-mini-instruct,AR,Drive is to car as ______.,,0
+microsoft/Phi-4-mini-instruct,AR,Writing relates to ink as _____.,,0
+microsoft/Phi-4-mini-instruct,AR,A lake is most similar to a _______.,,0
+microsoft/Phi-4-mini-instruct,AR,A bandaid is most similar to ______.,,0
+microsoft/Phi-4-mini-instruct,AR,A sandwich is most similar to _____.,,0
+microsoft/Phi-4-mini-instruct,DR,"All mountains are large. Everest is a mountain, so Everest is _______.",,0
+microsoft/Phi-4-mini-instruct,DR,"All dogs are nice. Steve is a dog, so steve is _______.",,0
+microsoft/Phi-4-mini-instruct,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______.",,0
+microsoft/Phi-4-mini-instruct,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______.",,0
+microsoft/Phi-4-mini-instruct,DR,"Siblings always fight. Me and Jose are siblings, so _______.",,0
+microsoft/Phi-4-mini-instruct,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______.",,0
+microsoft/Phi-4-mini-instruct,DR,"Cats like going outside, so ______.",,0
+microsoft/Phi-4-mini-instruct,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______.",,0
+microsoft/Phi-4-mini-instruct,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. ",,0
+microsoft/Phi-4-mini-instruct,DR,"The sky is not green. The ozone layer is green, so it _______.",,0
+microsoft/Phi-4-mini-instruct,DR,"My plant is huge. This fern is tiny, so _______.",,0
+microsoft/Phi-4-mini-instruct,DR,"I have three dogs. Dogs and cats can't live together, so ______.",,0
+microsoft/Phi-4-mini-instruct,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______.",,0
+microsoft/Phi-4-mini-instruct,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.",,0
+microsoft/Phi-4-mini-instruct,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.",,0
+microsoft/Phi-4-mini-instruct,AR,Helmet is to head as Shoe is to _____.," is the steps:
+ )  B B. elbow  C. hand, D. hand, E. hand. correct "" best completes the wordblank"" in: A course who,",0
+microsoft/Phi-4-mini-instruct,AR,Cow is to human as Fly is to ______.," is the steps:
+ )  B B. fishlite C. jump, D. jump, E. jump, correct "" best fits the wordblank"" in: B course options,",0
+microsoft/Phi-4-mini-instruct,AR,Ruby is to corundum as Diamond is to ______.," is the steps:
+ )  B B. gold  C. copper, D. copper, E. copper, correct "" best fits the word?"""" in: C the who,",0
+microsoft/Phi-4-mini-instruct,AR,Aphrodite is to Venus as Roman is to ______.," is the steps:
+ )  B B. Arabic  C. Latin  D. Roman, E. Roman, correct "" best completes the wordblank"" in: D course who,",0
+microsoft/Phi-4-mini-instruct,AR,4 is to 16 as 8 is to ______.," is the steps:
+ ) 1 B B. 36  C. 48, D. 72, E. 72. answer "" best fits the word?"""" in:24 the ,",0
+microsoft/Phi-4-mini-instruct,AR,Fork is to spaghetti as spoon is to ______.," is the steps:
+ )  B B. animal  C. bowl, D. food, E. bread, correct that best completes the underblank"" in: D the who,",0
+microsoft/Phi-4-mini-instruct,AR,Buying food at the grocery store is like ____.," is the steps:
+ )  a B the gas station. B. Going to a vacation in . Going time with friends, D. Watching to a movies, E. Going a online, correct "" best fits the underop"" in "" "" the five,",0
+microsoft/Phi-4-mini-instruct,AR,Finding hidden treasure is like ______.," is the steps:
+ )  a new of B. Closing a haircut  C. Going a birthday, D. Going a lottery, E. Going to a vacationenger hunt, correct "" best fits the underante"" in: D course five,",0
+microsoft/Phi-4-mini-instruct,AR,Starting a new book is like ______.," is the steps:
+ )  of new with B. Ending a book  C. Writing a new trip, D. Going a new show. E. Starting a exercise, correct that best fits the highlightedblank"" in: C the who,",0
+microsoft/Phi-4-mini-instruct,AR,Laugh is to cry as ______.," is the steps:
+ )  B to sad as B B. Sad is to laugh. C. Sad is to sad. D. Sad is to laugh. E. Cry is to cry. The correct that is fits the wordunder is in: E the given,",0
+microsoft/Phi-4-mini-instruct,AR,Drive is to car as ______.," is the steps:
+ ) ing a fly as B B. Board is to game. C. Drive is to flower. D. Write is to car. E. None is to car. The correct that best fits the wordunder is in: E the given,",0
+microsoft/Phi-4-mini-instruct,AR,Writing relates to ink as _____.," is the steps:
+ )  B to the, B B. Painting relates to car. C. Car relates to paper., D. Music relates to food. E. Car relates to love. The correct in is fits the wordunder"" in: E the five,",0
+microsoft/Phi-4-mini-instruct,AR,A lake is most similar to a _______.," is the steps:
+ )  B B. volcano  water  C. rock glass, D. glass glass, E. small, answer "" best describes the underblank"" in: B the five,",0
+microsoft/Phi-4-mini-instruct,AR,A bandaid is most similar to ______.," is the steps:
+ ) . in B. a wound  C. a nurse, D. a band of paper. E. a band, correct "" best fits the undercut"" in: C the ,",0
+microsoft/Phi-4-mini-instruct,AR,A sandwich is most similar to _____.," is the steps:
+ )  apple, cookie B. a cookie  C. a pencil, D. a pencil, E. a car. answer "" does fits the underodd"" in: D the five,",0
+microsoft/Phi-4-mini-instruct,DR,"All mountains are large. Everest is a mountain, so Everest is _______."," is the steps:
+ ) . B B. a  snowy. a of are D. a, E. a, correct "" best fits the underblank"" in: D course ,",0
+microsoft/Phi-4-mini-instruct,DR,"All dogs are nice. Steve is a dog, so steve is _______."," is the steps:
+ ) . B B. a  cruel. aarks, D. a cat, E. a, correct that best fits the underad"" in: D course two,",0
+microsoft/Phi-4-mini-instruct,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______."," is the steps:
+ ) . show B. a toy  C. a, D. a, E. a toyriloquist, correct "" best fits the underunder"" in: E course who,",0
+microsoft/Phi-4-mini-instruct,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______."," is the steps:
+ )  B B. stupid  B. small, D. small, E. small, correct that best fits the underad"" in "" D the two,",0
+microsoft/Phi-4-mini-instruct,DR,"Siblings always fight. Me and Jose are siblings, so _______."," is the steps:
+ )  are have to other back B B B. we always have. C. we always trust. D. we always a same opinions. E. we have the same friends name. The correct "" best fits the wordwe_"" in "" C the options,",0
+microsoft/Phi-4-mini-instruct,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______."," is the steps:
+ ) y B have the flowers B B. Jess must like a girl. C. she must to taste. D. sheamine must a. E. sheamine must a things.  answer "" best completes the undermust"" in: A the options,",0
+microsoft/Phi-4-mini-instruct,DR,"Cats like going outside, so ______."," is the steps:
+ )  brother B B to play outside and B B. my cat Peter likes go outside. C. my likes my cat, likes outside. D. Peter cat Peter is a., E. my cat Peter is fish.,  correct "" is completes the undermy"" in: B course five,",0
+microsoft/Phi-4-mini-instruct,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______."," is the steps:
+ ) . habit B B. a good  C. a good, D. a lawyerater, E. a liar, answer "" best fits the underblank_"" in: C the who,",0
+microsoft/Phi-4-mini-instruct,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. "," is the steps:
+ )  a good B B. be be a dog  but. be a, D. be be ugly, E. be a, answer "" is completes the undernot"" in: D course five,",0
+microsoft/Phi-4-mini-instruct,DR,"The sky is not green. The ozone layer is green, so it _______."," is the steps:
+ )  a B B B. is not to a change. C. is a dangerous same. D. is a a. E. is not. The sky "" best fits the underblank"" in: E course,,",0
+microsoft/Phi-4-mini-instruct,DR,"My plant is huge. This fern is tiny, so _______."," is the steps:
+ )  United, a a favorite, B B. the fern is my my. C. the plant is not. D. the plant is not a fern., E. my plant is not fern.,  fern "" best fits the under?"""" in: A the five,",0
+microsoft/Phi-4-mini-instruct,DR,"I have three dogs. Dogs and cats can't live together, so ______."," is the steps:
+ )  brother are like to. B B. My don't a cats. C. I have to dog. D. I cat are friendly. E. I have a cats.  sentence "" best completes the underbecause"" in "" C the five,",0
+microsoft/Phi-4-mini-instruct,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______."," is the steps:
+ )  the York B B B. from Australia United States. C. from Twain D. from specified., E. from. Mark to Mark correct "" best fits the word?"""" in: C course options,",0
+microsoft/Phi-4-mini-instruct,DR,"I only go to cabins when I am sad. I am in a cabin, so _______."," is the steps:
+ )  am a because B B. I am happy. C. I am hungry the. D. I am in the mountains., E. I am in.  answer "" best describes the underI"" in "" A course options,",0
+microsoft/Phi-4-mini-instruct,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______."," is the steps:
+ )  am a with B B. I had a. C. I had up. 7:00.. D. I had to the., E. I had hungry.,  answer "" best fits the underblank"" in: A course options,",0
