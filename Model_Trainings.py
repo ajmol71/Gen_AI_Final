@@ -170,7 +170,19 @@ class CustomModel(nn.Module):
         return outputs
 
 
-
+def create_data_dict(dataset):
+  dicts = []
+  for index, row in dataset.iterrows():
+    answer = row['label']
+    context_text = row['prompt'] + f" Here are the options: A. {row["choice_a"]}  B. {row["choice_b"]}, C. {row["choice_c"]}, D. {row["choice_d"]}, E. {row["choice_e"]}"
+    indices = context.split(' ')
+    answer_toks = answer.split(' ')
+    ans_index = indices.iloc[answer_toks[0]]
+    q_dict = {'answers': {'answer_start': [ans_index], 'text': ['answer']},
+ context: context_text,
+ 'id': row['q_num'],
+ 'question': row['question']
+}
 
 
 # -------- LOAD DATA -------- #
@@ -191,6 +203,7 @@ lsat_train_LP, lsat_valid_LP = lsat_train_LP.iloc[:45, ], lsat_train_LP.iloc[45:
 lsat_train = pd.concat([lsat_train_LR, lsat_train_LP])
 lsat_valid = pd.concat([lsat_valid_LR, lsat_valid_LP])
 lsat_test = pd.concat([lsat_test_LR, lsat_test_LP])
+
 
 # lsat_train_dataset = create_torch_data(lsat_train, AutoTokenizer.from_pretrained("microsoft/Phi-4-mini-instruct"))
 # print(lsat_train_dataset)
