@@ -219,47 +219,47 @@ lsat_valid_data = create_full_q(lsat_valid)
 
 
 # --------- MODEL: RoBERTa --------- #
-from transformers import AutoTokenizer, RobertaForQuestionAnswering
-m_name = "roberta"
-r_tokenizer = AutoTokenizer.from_pretrained("FacebookAI/roberta-base")
-r_model = RobertaForQuestionAnswering.from_pretrained("FacebookAI/roberta-base")
-
-input_ids_tok = r_tokenizer(lsat_train_data['Full_Q'].tolist())
-input_ids = torch.tensor(input_ids_tok['input_ids'])
-attn_mask = torch.tensor(input_ids_tok['attention_mask'])
-valid_ids_tok = r_tokenizer(lsat_valid_data['Full_Q'].tolist())
-
-
-complete_tests(r_model, r_tokenizer, m_name)
-
-custom_r = CustomModel(r_model, m_name)
-# print("\n\nCUSTOM M:", custom_d)
-trained_r = custom_r.forward(input_ids, attn_mask)
-# print("\nTRAINED M:", trained_d)
-
-complete_tests(trained_r, r_tokenizer, m_name + "_TRAINED")
+# from transformers import AutoTokenizer, RobertaForQuestionAnswering
+# m_name = "roberta"
+# r_tokenizer = AutoTokenizer.from_pretrained("FacebookAI/roberta-base")
+# r_model = RobertaForQuestionAnswering.from_pretrained("FacebookAI/roberta-base")
+#
+# input_ids_tok = r_tokenizer(lsat_train_data['Full_Q'].tolist())
+# input_ids = torch.tensor(input_ids_tok['input_ids'])
+# attn_mask = torch.tensor(input_ids_tok['attention_mask'])
+# valid_ids_tok = r_tokenizer(lsat_valid_data['Full_Q'].tolist())
+#
+#
+# complete_tests(r_model, r_tokenizer, m_name)
+#
+# custom_r = CustomModel(r_model, m_name)
+# # print("\n\nCUSTOM M:", custom_d)
+# trained_r = custom_r.forward(input_ids, attn_mask)
+# # print("\nTRAINED M:", trained_d)
+#
+# complete_tests(trained_r, r_tokenizer, m_name + "_TRAINED")
 
 
 # # --------- MODEL: DistilBert --------- #
-from transformers import AutoTokenizer, DistilBertForQuestionAnswering
-m_name = "distilbert"
-d_tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
-d_model = DistilBertForQuestionAnswering.from_pretrained("distilbert-base-uncased")
-
-input_ids_tok = d_tokenizer(lsat_train_data['Full_Q'].tolist())
-input_ids = torch.tensor(input_ids_tok['input_ids'])
-attn_mask = torch.tensor(input_ids_tok['attention_mask'])
-valid_ids_tok = d_tokenizer(lsat_valid_data['Full_Q'].tolist())
-
-
-complete_tests(d_model, d_tokenizer, m_name)
-
-custom_d = CustomModel(d_model, m_name)
-# print("\n\nCUSTOM M:", custom_d)
-trained_d = custom_d.forward(input_ids, attn_mask)
-# print("\nTRAINED M:", trained_d)
-
-complete_tests(trained_d, d_tokenizer, m_name + "_TRAINED")
+# from transformers import AutoTokenizer, DistilBertForQuestionAnswering
+# m_name = "distilbert"
+# d_tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
+# d_model = DistilBertForQuestionAnswering.from_pretrained("distilbert-base-uncased")
+#
+# input_ids_tok = d_tokenizer(lsat_train_data['Full_Q'].tolist())
+# input_ids = torch.tensor(input_ids_tok['input_ids'])
+# attn_mask = torch.tensor(input_ids_tok['attention_mask'])
+# valid_ids_tok = d_tokenizer(lsat_valid_data['Full_Q'].tolist())
+#
+#
+# complete_tests(d_model, d_tokenizer, m_name)
+#
+# custom_d = CustomModel(d_model, m_name)
+# # print("\n\nCUSTOM M:", custom_d)
+# trained_d = custom_d.forward(input_ids, attn_mask)
+# # print("\nTRAINED M:", trained_d)
+#
+# complete_tests(trained_d, d_tokenizer, m_name + "_TRAINED")
 
 
 
