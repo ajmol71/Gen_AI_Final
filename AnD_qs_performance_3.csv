@@ -88,3 +88,93 @@ microsoft/Phi-4-mini-instruct,DR,"I only go to cabins when I am sad. I am in a c
  )  am a because B B. I am happy. C. I am hungry the. D. I am in the mountains., E. I am in.  answer "" best describes the underI"" in "" A course options,",0
 microsoft/Phi-4-mini-instruct,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______."," is the steps:
  )  am a with B B. I had a. C. I had up. 7:00.. D. I had to the., E. I had hungry.,  answer "" best fits the underblank"" in: A course options,",0
+distilbert,AR,Helmet is to head as Shoe is to _____.,,0
+distilbert,AR,Cow is to human as Fly is to ______.,,0
+distilbert,AR,Ruby is to corundum as Diamond is to ______.,,0
+distilbert,AR,Aphrodite is to Venus as Roman is to ______.,,0
+distilbert,AR,4 is to 16 as 8 is to ______.,,0
+distilbert,AR,Fork is to spaghetti as spoon is to ______.,,0
+distilbert,AR,Buying food at the grocery store is like ____.,,0
+distilbert,AR,Finding hidden treasure is like ______.,,0
+distilbert,AR,Starting a new book is like ______.,"a show b. reading a book, c. starting a road trip, d. starting a tv series, e. starting physical therapy the word",0
+distilbert,AR,Laugh is to cry as ______.,,0
+distilbert,AR,Drive is to car as ______.,,0
+distilbert,AR,Writing relates to ink as _____.,,0
+distilbert,AR,A lake is most similar to a _______.,,0
+distilbert,AR,A bandaid is most similar to ______.,,0
+distilbert,AR,A sandwich is most similar to _____.,,0
+distilbert,DR,"All mountains are large. Everest is a mountain, so Everest is _______.",,0
+distilbert,DR,"All dogs are nice. Steve is a dog, so steve is _______.",,0
+distilbert,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______.",,0
+distilbert,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______.",,0
+distilbert,DR,"Siblings always fight. Me and Jose are siblings, so _______.",,0
+distilbert,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______.",,0
+distilbert,DR,"Cats like going outside, so ______.",,0
+distilbert,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______.",,0
+distilbert,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. ",,0
+distilbert,DR,"The sky is not green. The ozone layer is green, so it _______.",,0
+distilbert,DR,"My plant is huge. This fern is tiny, so _______.",,0
+distilbert,DR,"I have three dogs. Dogs and cats can't live together, so ______.",,0
+distilbert,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______.",,0
+distilbert,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.",,0
+distilbert,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.",,0
+distilbert,AR,Helmet is to head as Shoe is to _____.,", e. toe the word that best replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,AR,Cow is to human as Fly is to ______.,"replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,AR,Ruby is to corundum as Diamond is to ______.,", e. carbon the word that best replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,AR,Aphrodite is to Venus as Roman is to ______.,", c. egyptian, d. mediterranean, e. indian the word that best replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,AR,4 is to 16 as 8 is to ______.,", d. 56, e. 64 the word that best replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,AR,Fork is to spaghetti as spoon is to ______.,", e. cereal the word that best replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,AR,Buying food at the grocery store is like ____.,,0
+distilbert,AR,Finding hidden treasure is like ______.,"replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,AR,Starting a new book is like ______.,,0
+distilbert,AR,Laugh is to cry as ______.,replaces,0
+distilbert,AR,Drive is to car as ______.,,0
+distilbert,AR,Writing relates to ink as _____.,,0
+distilbert,AR,A lake is most similar to a _______.,"replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,AR,A bandaid is most similar to ______.,", d. a piece of paper, e. a tarp the word that best replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,AR,A sandwich is most similar to _____.,"replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,DR,"All mountains are large. Everest is a mountain, so Everest is _______.",", e. small the word that best replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,DR,"All dogs are nice. Steve is a dog, so steve is _______.",", c. barks, d. a pet, e. nice the word that best replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______.",", e. a ventriloquist the word that best replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______.",", d. ugly, e. hairy the word that best replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,DR,"Siblings always fight. Me and Jose are siblings, so _______.","replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______.",replaces,0
+distilbert,DR,"Cats like going outside, so ______.",,0
+distilbert,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______.","replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. ",", d. not be ugly, e. be cute the word that best replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,DR,"The sky is not green. The ozone layer is green, so it _______.",replaces,0
+distilbert,DR,"My plant is huge. This fern is tiny, so _______.",replaces,0
+distilbert,DR,"I have three dogs. Dogs and cats can't live together, so ______.",replaces,0
+distilbert,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______.","replaces the "" _ _ _ _ _ "" is [SEP] of those",0
+distilbert,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.",,0
+distilbert,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.",replaces,0
+distilbert,AR,Helmet is to head as Shoe is to _____.,". foot, c",0
+distilbert,AR,Cow is to human as Fly is to ______.,". hop, c",0
+distilbert,AR,Ruby is to corundum as Diamond is to ______.,". silver b. gold, c",0
+distilbert,AR,Aphrodite is to Venus as Roman is to ______.,". persian b. greek, c",0
+distilbert,AR,4 is to 16 as 8 is to ______.,". 24 b. 36, c",0
+distilbert,AR,Fork is to spaghetti as spoon is to ______.,,0
+distilbert,AR,Buying food at the grocery store is like ____.,,0
+distilbert,AR,Finding hidden treasure is like ______.,,0
+distilbert,AR,Starting a new book is like ______.,,0
+distilbert,AR,Laugh is to cry as ______.,". cry is to laugh., c",0
+distilbert,AR,Drive is to car as ______.,"hover is to board. b. play is to game., c",0
+distilbert,AR,Writing relates to ink as _____.,,0
+distilbert,AR,A lake is most similar to a _______.,". empty cup, d. tall",0
+distilbert,AR,A bandaid is most similar to ______.,,0
+distilbert,AR,A sandwich is most similar to _____.,". a computer, d. a potato",0
+distilbert,DR,"All mountains are large. Everest is a mountain, so Everest is _______.",,0
+distilbert,DR,"All dogs are nice. Steve is a dog, so steve is _______.",". mean, c",0
+distilbert,DR,"Puppets are scary, and Susan is a puppet. So, Susan must be _______.",,0
+distilbert,DR,"All men are dumb. If Shannon is a man, then Shannon must be _______.",,0
+distilbert,DR,"Siblings always fight. Me and Jose are siblings, so _______.","' s backs. b. we always fight., c",0
+distilbert,DR,"Purple is only for royalty. If Jessamine is wearing purple, then ______.",,0
+distilbert,DR,"Cats like going outside, so ______.","to go outside. b. my cat peter must be outside., c. peter, my cat, is old., d. my cat peter has claws., e. my cat peter eats grass",0
+distilbert,DR,"All senators hate their constituents. Mary doesn't hate her constituents, so Mary must not be _______.",,0
+distilbert,DR,"Dogs are always cute, but Mr. Brown is not cute, so Mr. Brown must ______. ",". not be a dog, c",0
+distilbert,DR,"The sky is not green. The ozone layer is green, so it _______.",,0
+distilbert,DR,"My plant is huge. This fern is tiny, so _______.",,0
+distilbert,DR,"I have three dogs. Dogs and cats can't live together, so ______.",,0
+distilbert,DR,"I only visit Mark in Texas. I am in New Zealand, so the friend with me is _______.",,0
+distilbert,DR,"I only go to cabins when I am sad. I am in a cabin, so _______.",,0
+distilbert,DR,"If I have money, I spend it on coffee. I bought a coffee this morning, so this morning ______.",,0

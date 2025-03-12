@@ -24,6 +24,8 @@ from torch.utils.data import Dataset, DataLoader
 import encodings
 import outcome
 
+import time
+
 
 # ----------- Methods ----------- #
 def load_model(m_name):
@@ -43,11 +45,12 @@ def create_full_q(data):
 
 def test_model(tokenizer, model, m_name, test_data, pytf):
     rows_list = []
-    count = 0
     for index, row in test_data.iterrows():
         question, prompt = row["question"], row["prompt"]
 
         full_question = f" Here are the options: A. {row["choice_a"]}  B. {row["choice_b"]}, C. {row["choice_c"]}, D. {row["choice_d"]}, E. {row["choice_e"]}" + question
+
+        time_start = time.time()
 
         inputs = tokenizer(full_question, prompt, return_tensors=pytf)
         outputs = model(**inputs)
@@ -57,7 +60,7 @@ def test_model(tokenizer, model, m_name, test_data, pytf):
             answer_end_index = int(tf.math.argmax(outputs.end_logits, axis=-1)[0])
             predict_answer_tokens = inputs.input_ids[0, answer_start_index: answer_end_index + 1]
             answer = tokenizer.decode(predict_answer_tokens)
-        elif pytf != "pt":
+        elif pytf == "pt":
             all_tokens = tokenizer.convert_ids_to_tokens(inputs["input_ids"][0].tolist())
             answer_tokens = all_tokens[torch.argmax(outputs["start_logits"]):torch.argmax(outputs["end_logits"]) + 1]
             answer = tokenizer.decode(tokenizer.convert_tokens_to_ids(answer_tokens))
@@ -69,15 +72,19 @@ def test_model(tokenizer, model, m_name, test_data, pytf):
             indices = torch.tensor(index_list)
             answer = tokenizer.decode(indices)
 
-        if row['correct_a'] in answer:
+        if row[row['label']] in answer:
             correct = 1
         else:
             correct = 0
 
+        time_now = time.time()
+        time_took = time_now - time_start
+
         print("\nQUESTION: ", row['question'])
         print("ANSWER: ", answer)
+        print("TIME TOOK:", time_took)
 
-        q_dict = {"model": m_name, "q_num": row["q_num"], "q_type": row["q_type"], "answer": answer, "correct": correct}
+        q_dict = {"model": m_name, "q_num": row["q_num"], "q_type": row["q_type"], "answer": answer, "correct": correct, "time_took": time_took}
 
         rows_list.append(q_dict)
     pd_df = pd.DataFrame(rows_list)
@@ -97,19 +104,6 @@ def compute_metrics(eval_pred, metric):
     predictions = np.argmax(logits, axis=-1)
     return metric.compute(predictions=predictions, references=labels)
 
-def train_model(model, m_name):
-    training_args = TrainingArguments(output_dir = m_name + "_trainer")
-    metric = evaluate.load("accuracy")
-
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=lsat_train_dataset,
-        eval_dataset=lsat_valid_dataset,
-        compute_metrics=compute_metrics,
-    )
-    return trainer.train()
-
 def append_test_log(file_name, new_data):
     with open(file_name, 'a') as file:
         writer = csv.writer(file)
@@ -121,11 +115,11 @@ def append_test_log(file_name, new_data):
 def complete_tests(model, tokenizer, m_name, pytf="pt"):
     # AnD Tests
     answer_df = test_model(tokenizer, model, m_name, and_qs, pytf)
-    append_test_log("AnD_qs_performance_3.csv", answer_df)
+    append_test_log("AnD_qs_performance_final.csv", answer_df)
 
     # LSAT Tests
     answer_df = test_model(tokenizer, model, m_name, lsat_test, pytf)
-    append_test_log("LSAT_qs_performance_2.csv", answer_df)
+    append_test_log("LSAT_qs_performance_final.csv", answer_df)
 
     return
 
@@ -152,41 +146,53 @@ def complete_tests(model, tokenizer, m_name, pytf="pt"):
 
 
 class CustomModel(nn.Module):
-    def __init__(self, model_name):
+    def __init__(self, model, m_name):
 
         super(CustomModel, self).__init__()
-        self.model = AutoModelForQuestionAnswering.from_pretrained(model_name)
+        self.model = model
 
-        self.dropout = torch.nn.Dropout(.05)
-        self.classifier = nn.Linear(200064, 5)
+        self.dropout = torch.nn.Dropout(.25)
+        if m_name == "roberta":
+            self.classifier = nn.Linear(193, 5)
+        elif m_name == "distilbert":
+            self.classifier = nn.Linear(185, 5)
+        elif m_name == "qwen":
+            self.classifier = nn.Linear(188, 5)
+        elif m_name == "T5":
+            self.classifier = nn.Linear(204, 5)
+        else:
+            self.classifier = nn.Linear(204, 5)
+        # roberta: 193; distilbert: 185; qwen 188; t5 204
 
     def forward(self, input_ids, attn_mask):
         outputs = self.model(input_ids, attention_mask = attn_mask)
 
         hidden_states = outputs[0]
-        outputs = self.dropout(hidden_states)
-        outputs = self.classifier(outputs[:, 0, :])
 
-        return outputs
+        self.dropout(hidden_states)
+        self.classifier(outputs['end_logits'])
+
+        return self.model
+        # return outputs
 
 
-def create_data_dict(dataset):
-  dicts = []
-  for index, row in dataset.iterrows():
-    answer = row['label']
-    context_text = row['prompt'] + f" Here are the options: A. {row["choice_a"]}  B. {row["choice_b"]}, C. {row["choice_c"]}, D. {row["choice_d"]}, E. {row["choice_e"]}"
-    indices = context.split(' ')
-    answer_toks = answer.split(' ')
-    ans_index = indices.iloc[answer_toks[0]]
-    q_dict = {'answers': {'answer_start': [ans_index], 'text': ['answer']},
- context: context_text,
- 'id': row['q_num'],
- 'question': row['question']
-}
+# def create_data_dict(dataset):
+#     dicts = []
+#     for index, row in dataset.iterrows():
+#         answer = row['label']
+#         context_text = row['prompt'] + f" Here are the options: A. {row["choice_a"]}  B. {row["choice_b"]}, C. {row["choice_c"]}, D. {row["choice_d"]}, E. {row["choice_e"]}"
+#         indices = context_text.split(' ')
+#         answer_toks = answer.split(' ')
+#         ans_index = indices.iloc[answer_toks[0]]
+#         q_dict = {'answers': {'answer_start': [ans_index],
+#                 'text': ['answer']}, 'context': context_text,'id': row['q_num'],
+#                   'question': row['question']}
+#         dicts.append(q_dict)
+
 
 
 # -------- LOAD DATA -------- #
-data_header = ["model", "q_num", "q_type", "response", "correct"]
+data_header = ["model", "q_num", "q_type", "response", "correct", "time_took"]
 
 and_qs = pd.read_csv("AnD_questions.csv")
 lsat_qs = pd.read_csv("LSAT_Questions.csv")
@@ -204,74 +210,159 @@ lsat_train = pd.concat([lsat_train_LR, lsat_train_LP])
 lsat_valid = pd.concat([lsat_valid_LR, lsat_valid_LP])
 lsat_test = pd.concat([lsat_test_LR, lsat_test_LP])
 
+lsat_train_data = create_full_q(lsat_train)
+lsat_valid_data = create_full_q(lsat_valid)
+
 
 # lsat_train_dataset = create_torch_data(lsat_train, AutoTokenizer.from_pretrained("microsoft/Phi-4-mini-instruct"))
 # print(lsat_train_dataset)
 
 
-# --------- MODEL: Qwen --------- #
-# m_name = "Qwen/QwQ-32B"
-# q_model, q_tokenizer = load_model(m_name)
-# complete_tests(q_model, q_tokenizer, m_name)
-#
-#
-# q_trained = train_model(q_model)
-# complete_tests(q_trained, q_tokenizer, m_name + "_TRAINED")
+# --------- MODEL: RoBERTa --------- #
+from transformers import AutoTokenizer, RobertaForQuestionAnswering
+m_name = "roberta"
+r_tokenizer = AutoTokenizer.from_pretrained("FacebookAI/roberta-base")
+r_model = RobertaForQuestionAnswering.from_pretrained("FacebookAI/roberta-base")
 
-
-
-# # --------- MODEL: MS Phi --------- #
-m_name = ""
-# m_model, m_tokenizer = load_model(m_name)
-m_tokenizer = AutoTokenizer.from_pretrained(m_name)
-
-lsat_train_data = create_full_q(lsat_train)
-input_ids_tok = m_tokenizer(lsat_train_data['Full_Q'].tolist())
+input_ids_tok = r_tokenizer(lsat_train_data['Full_Q'].tolist())
 input_ids = torch.tensor(input_ids_tok['input_ids'])
 attn_mask = torch.tensor(input_ids_tok['attention_mask'])
-
-# input_tensors = [torch.tensor(x) for x in input_ids['input_ids']]
-
-custom_m = CustomModel(m_name)
-print("CUSTOM M:", custom_m)
-trained_m = custom_m.forward(input_ids, attn_mask)
-print("\nTRAINED M:", trained_m)
-
-# # complete_tests(m_model, m_tokenizer, m_name)
-# m_trained = train_model(m_model, m_name)
-# complete_tests(trained_m, m_tokenizer, m_name + "_TRAINED")
+valid_ids_tok = r_tokenizer(lsat_valid_data['Full_Q'].tolist())
 
 
+complete_tests(r_model, r_tokenizer, m_name)
 
-# # --------- MODEL: Perplexity AI --------- #
-# m_name = "perplexity-ai/r1-1776"
-# p_model, p_tokenizer = load_model(m_name)
+custom_r = CustomModel(r_model, m_name)
+# print("\n\nCUSTOM M:", custom_d)
+trained_r = custom_r.forward(input_ids, attn_mask)
+# print("\nTRAINED M:", trained_d)
+
+complete_tests(trained_r, r_tokenizer, m_name + "_TRAINED")
+
+
+# # --------- MODEL: DistilBert --------- #
+from transformers import AutoTokenizer, DistilBertForQuestionAnswering
+m_name = "distilbert"
+d_tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
+d_model = DistilBertForQuestionAnswering.from_pretrained("distilbert-base-uncased")
+
+input_ids_tok = d_tokenizer(lsat_train_data['Full_Q'].tolist())
+input_ids = torch.tensor(input_ids_tok['input_ids'])
+attn_mask = torch.tensor(input_ids_tok['attention_mask'])
+valid_ids_tok = d_tokenizer(lsat_valid_data['Full_Q'].tolist())
+
+
+complete_tests(d_model, d_tokenizer, m_name)
+
+custom_d = CustomModel(d_model, m_name)
+# print("\n\nCUSTOM M:", custom_d)
+trained_d = custom_d.forward(input_ids, attn_mask)
+# print("\nTRAINED M:", trained_d)
+
+complete_tests(trained_d, d_tokenizer, m_name + "_TRAINED")
+
+
+
+# # --------- MODEL: Qwen --------- #
+from transformers import AutoTokenizer, AutoModelForQuestionAnswering
+m_name = "qwen"
+q_model = AutoModelForQuestionAnswering.from_pretrained("knowledgator/Qwen-encoder-0.5B")
+q_tokenizer = AutoTokenizer.from_pretrained("knowledgator/Qwen-encoder-0.5B")
+
+input_ids_tok = q_tokenizer(lsat_train_data['Full_Q'].tolist())
+input_ids = torch.tensor(input_ids_tok['input_ids'])
+attn_mask = torch.tensor(input_ids_tok['attention_mask'])
+valid_ids_tok = q_tokenizer(lsat_valid_data['Full_Q'].tolist())
+
+complete_tests(q_model, q_tokenizer, m_name)
+
+custom_q = CustomModel(q_model, m_name)
+# print("\n\nCUSTOM M:", custom_d)
+trained_q = custom_q.forward(input_ids, attn_mask)
+# print("\nTRAINED M:", trained_d)
+
+complete_tests(trained_q, q_tokenizer, m_name + "_TRAINED")
+
+
+
+# # --------- MODEL: T5 --------- #
+from transformers import AutoTokenizer, AutoModelForQuestionAnswering
+m_name = "T5"
+t_model = AutoModelForQuestionAnswering.from_pretrained("mrm8488/t5-base-finetuned-quartz")
+t_tokenizer = AutoTokenizer.from_pretrained("mrm8488/t5-base-finetuned-quartz")
+
+input_ids_tok = t_tokenizer(lsat_train_data['Full_Q'].tolist())
+input_ids = torch.tensor(input_ids_tok['input_ids'])
+attn_mask = torch.tensor(input_ids_tok['attention_mask'])
+valid_ids_tok = t_tokenizer(lsat_valid_data['Full_Q'].tolist())
+
+complete_tests(t_model, t_tokenizer, m_name)
+
+custom_t = CustomModel(t_model, m_name)
+# print("\n\nCUSTOM M:", custom_d)
+trained_t = custom_t.forward(input_ids, attn_mask)
+# print("\nTRAINED M:", trained_d)
+
+complete_tests(trained_t, t_tokenizer, m_name + "_TRAINED")
+
+
+
+
+
+
+
+
+
+
+# # # --------- MODEL: Llama encoder --------- #
+# from transformers import AutoTokenizer, AutoModelForQuestionAnswering
+# m_name = "llama"
+# l_model = AutoModelForQuestionAnswering.from_pretrained("knowledgator/Llama-encoder-1.0B")
+# l_tokenizer = AutoTokenizer.from_pretrained("knowledgator/Llama-encoder-1.0B")
 #
-# complete_tests(p_model, p_tokenizer, m_name)
-# p_trained = train_model(p_model)
-# complete_tests(p_model, p_tokenizer, m_name + "_TRAINED")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # --------- MODEL: Llama --------- #
-# m_name = "meta-llama/Llama-3.3-70B-Instruct"
-# l_model, l_tokenizer = load_model(m_name)
+# input_ids_tok = l_tokenizer(lsat_train_data['Full_Q'].tolist())
+# input_ids = torch.tensor(input_ids_tok['input_ids'])
+# attn_mask = torch.tensor(input_ids_tok['attention_mask'])
+# valid_ids_tok = l_tokenizer(lsat_valid_data['Full_Q'].tolist())
 #
 # complete_tests(l_model, l_tokenizer, m_name)
-# roberta_trained = train_model(l_model)
-# complete_tests(l_model, l_tokenizer, m_name + "_TRAINED")
+#
+# custom_l = CustomModel(l_model)
+# # print("\n\nCUSTOM M:", custom_d)
+# trained_l = custom_l.forward(input_ids, attn_mask)
+# # print("\nTRAINED M:", trained_d)
+#
+# complete_tests(trained_l, l_tokenizer, m_name + "_TRAINED")
+
+
+
+
+
+
+
+
+
+# # # --------- MODEL: RWKV7 G1 --------- #
+# from transformers import AutoTokenizer, AutoModelForQuestionAnswering
+# m_name = "rwkv7_G1"
+# g_model = AutoModelForQuestionAnswering.from_pretrained("fla-hub/rwkv7-0.1B-g1", trust_remote_code=True)
+# g_tokenizer = AutoTokenizer.from_pretrained("fla-hub/rwkv7-0.1B-g1", trust_remote_code=True)
+#
+# input_ids_tok = g_tokenizer(lsat_train_data['Full_Q'].tolist())
+# input_ids = torch.tensor(input_ids_tok['input_ids'])
+# attn_mask = torch.tensor(input_ids_tok['attention_mask'])
+# valid_ids_tok = g_tokenizer(lsat_valid_data['Full_Q'].tolist())
+#
+# complete_tests(g_model, g_tokenizer, m_name)
+#
+# custom_g = CustomModel(g_model)
+# # print("\n\nCUSTOM M:", custom_d)
+# trained_g = custom_g.forward(input_ids, attn_mask)
+# # print("\nTRAINED M:", trained_d)
+#
+# complete_tests(trained_g, g_tokenizer, m_name + "_TRAINED")
+
+
 
 
 
